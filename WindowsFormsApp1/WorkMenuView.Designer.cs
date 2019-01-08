@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp1
 {
-    partial class WorkMenu
+    partial class WorkMenuView
     {
         /// <summary>
         /// Required designer variable.
@@ -44,6 +44,7 @@
             this.button1.TabIndex = 0;
             this.button1.Text = "to issue policy";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -64,6 +65,7 @@
             this.button3.TabIndex = 2;
             this.button3.Text = "Clients";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -83,8 +85,9 @@
             this.button5.TabIndex = 4;
             this.button5.Text = "Policy";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
-            // WorkMenu
+            // WorkMenuView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -94,8 +97,9 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Name = "WorkMenu";
+            this.Name = "WorkMenuView";
             this.Text = "WorkMenu";
+            this.Load += new System.EventHandler(this.WorkMenu_Load);
             this.ResumeLayout(false);
 
         }

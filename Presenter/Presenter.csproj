@@ -43,11 +43,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IPresenter.cs" />
-    <Compile Include="IStartLoginView.cs" />
-    <Compile Include="IView.cs" />
+    <Compile Include="Presenter\IPresenter.cs" />
+    <Compile Include="Presenter\WorkMenuPresenter.cs" />
+    <Compile Include="View\IStartLoginView.cs" />
+    <Compile Include="View\IView.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="StartLoginPresenter.cs" />
+    <Compile Include="Presenter\StartLoginPresenter.cs" />
+    <Compile Include="View\IWorkMenuView.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
