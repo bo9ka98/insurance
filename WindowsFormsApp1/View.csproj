@@ -83,6 +83,9 @@
     <EmbeddedResource Include="StartLoginView.resx">
       <DependentUpon>StartLoginView.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="WorkMenu.resx">
+      <DependentUpon>WorkMenu.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
