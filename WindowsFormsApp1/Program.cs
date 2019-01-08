@@ -1,8 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using Ninject;
+using Presenter;
 
 namespace WindowsFormsApp1
 {
@@ -14,9 +13,18 @@ namespace WindowsFormsApp1
         [STAThread]
         static void Main()
         {
+            Ninject.StandardKernel kernel = new StandardKernel();
+            kernel.Bind<ApplicationContext>().ToConstant(new ApplicationContext());
+
+            kernel.Bind<IStartLoginView>().To<StartLoginView>();
+
+            kernel.Bind<StartLoginPresenter>().ToSelf();
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new StartForm());
+
+            kernel.Get<StartLoginPresenter>().Run();
+            Application.Run(kernel.Get<ApplicationContext>());
         }
     }
 }

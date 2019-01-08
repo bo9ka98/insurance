@@ -8,7 +8,7 @@ namespace Model
 {
     class Man
     {
-        public Alias ManAlias { get; set; }
+        public Alias ManName  { get; set; }
         private DateTime DataOfBirth { get; set; }
         private string Sex { get; set; }
         private string photoMan; //заглушка

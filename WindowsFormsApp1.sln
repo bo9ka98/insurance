@@ -4,8 +4,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 15.0.27703.2042
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "View", "WindowsFormsApp1\View.csproj", "{871DB66B-69CD-4959-BE8E-674BA7A3B7C8}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B8695E04-1C98-4C59-9F30-01076D018277} = {B8695E04-1C98-4C59-9F30-01076D018277}
+		{D4773B35-0402-4CFA-855A-852499ADC4E7} = {D4773B35-0402-4CFA-855A-852499ADC4E7}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "WindowsFormsApp2\Model.csproj", "{D4773B35-0402-4CFA-855A-852499ADC4E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Presenter", "Presenter\Presenter.csproj", "{B8695E04-1C98-4C59-9F30-01076D018277}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D4773B35-0402-4CFA-855A-852499ADC4E7} = {D4773B35-0402-4CFA-855A-852499ADC4E7}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +30,10 @@ Global
 		{D4773B35-0402-4CFA-855A-852499ADC4E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D4773B35-0402-4CFA-855A-852499ADC4E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D4773B35-0402-4CFA-855A-852499ADC4E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8695E04-1C98-4C59-9F30-01076D018277}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8695E04-1C98-4C59-9F30-01076D018277}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8695E04-1C98-4C59-9F30-01076D018277}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8695E04-1C98-4C59-9F30-01076D018277}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

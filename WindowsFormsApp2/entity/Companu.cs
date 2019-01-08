@@ -8,7 +8,7 @@ namespace Model
 {
     class Companu
     {
-        private Alias ManagerAlias { get; set; }
+        private Alias ManagerName { get; set; }
         private Alias AccountantName { get; set; }
         private int RegistrationNumber { get; set; }
         private string CompanuName { get; set; }
