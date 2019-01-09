@@ -25,8 +25,9 @@ namespace WindowsFormsApp1
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            kernel.Get<StartLoginPresenter>().Run();
-            Application.Run(kernel.Get<ApplicationContext>());
+            //kernel.Get<StartLoginPresenter>().Run();
+            //Application.Run(kernel.Get<ApplicationContext>());
+            Application.Run(new Form1());
         }
     }
 }

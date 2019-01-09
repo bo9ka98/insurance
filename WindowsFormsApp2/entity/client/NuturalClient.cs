@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Model
 {
-    class PhysicalClient : Man, IClient
+    class NuturalClient : Man, IClient
     {
         void IClient.SetContract()
         {

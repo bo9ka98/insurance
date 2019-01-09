@@ -56,7 +56,7 @@
     <Compile Include="entity\client\IClient.cs" />
     <Compile Include="entity\client\LegalСlient.cs" />
     <Compile Include="entity\client\Man.cs" />
-    <Compile Include="entity\client\PhysicalClient.cs" />
+    <Compile Include="entity\client\NuturalClient.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

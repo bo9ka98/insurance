@@ -62,5 +62,26 @@ namespace WindowsFormsApp1
         {
 
         }
+
+        private void contextMenuStrip1_Opening(object sender, CancelEventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            MessageBox.Show(comboBox1.Text);
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+            pictureBox1.;
+ 
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
