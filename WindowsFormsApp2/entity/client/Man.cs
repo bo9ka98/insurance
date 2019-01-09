@@ -12,7 +12,7 @@ namespace Model
         private DateTime DataOfBirth { get; set; }
         private string Sex { get; set; }
         private string photoMan; //заглушка
-        private int ExperienceDrivingCar { get; set; }
+        private DateTime ExperienceDrivingCar { get; set; }
         private string AddressResidence { get; set; }
         private string PhoneNumber { get; set; }
     }
