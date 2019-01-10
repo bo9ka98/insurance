@@ -20,11 +20,15 @@ namespace View
             kernel.Bind<IWorkMenuView>().To<WorkMenuView>();
             kernel.Bind<ISearchNuturalClientView>().To<SearchNuturalClientFormView>();
             kernel.Bind<ISearchLegalClientView>().To<SearchLegalClientFormView>();
+            kernel.Bind<ICreatNuturalClienView>().To<CreatNuturalClienFormView>();
+            kernel.Bind<ICreatLegalClientView>().To<CreatLegalClientFormView>();
 
             kernel.Bind<StartLoginPresenter>().ToSelf();
             kernel.Bind<WorkMenuPresenter>().ToSelf();
             kernel.Bind<SearchNuturalClientPresenter>().ToSelf();
             kernel.Bind<SearchLegalClientPresenter>().ToSelf();
+            kernel.Bind<CreatNuturalClienPresenter>().ToSelf();
+            kernel.Bind<CreatLegalClientPresenter>().ToSelf();
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);

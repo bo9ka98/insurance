@@ -119,6 +119,7 @@
             this.TextBoxUTN.Name = "TextBoxUTN";
             this.TextBoxUTN.Size = new System.Drawing.Size(283, 20);
             this.TextBoxUTN.TabIndex = 13;
+            this.TextBoxUTN.TextChanged += new System.EventHandler(this.TextBoxUTN_TextChanged);
             // 
             // TextBoxOrganisationName
             // 
@@ -205,6 +206,7 @@
             this.groupBoxAccountantAlias.TabIndex = 33;
             this.groupBoxAccountantAlias.TabStop = false;
             this.groupBoxAccountantAlias.Text = "ФИО главного бухгалтера";
+            this.groupBoxAccountantAlias.Enter += new System.EventHandler(this.groupBoxAccountantAlias_Enter);
             // 
             // label1
             // 

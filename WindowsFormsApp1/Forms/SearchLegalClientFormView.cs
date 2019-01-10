@@ -8,6 +8,9 @@ namespace View
     {
         private readonly ApplicationContext _context;
 
+        public string OrganisationNameLegalClientStr => TextBoxOrganisationName.Text;
+        public string UTNLegalClientStr => TextBoxUTN.Text;
+
         public event Action EnterSearch;
         public event Action EnterReturnWorkMenu;
 

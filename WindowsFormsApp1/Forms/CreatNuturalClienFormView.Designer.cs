@@ -83,6 +83,7 @@
             this.textBoxSurname.Name = "textBoxSurname";
             this.textBoxSurname.Size = new System.Drawing.Size(155, 20);
             this.textBoxSurname.TabIndex = 3;
+            this.textBoxSurname.TextChanged += new System.EventHandler(this.textBoxSurname_TextChanged);
             // 
             // textBoxName
             // 
@@ -98,6 +99,7 @@
             this.textBoxMiddleName.Name = "textBoxMiddleName";
             this.textBoxMiddleName.Size = new System.Drawing.Size(155, 20);
             this.textBoxMiddleName.TabIndex = 5;
+            this.textBoxMiddleName.TextChanged += new System.EventHandler(this.textBoxMiddleName_TextChanged);
             // 
             // labelDateOfBirth
             // 

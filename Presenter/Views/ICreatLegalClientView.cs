@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace Presenter
 {
-    public interface ISearchLegalClientView : IView, IHomeButton
+    public interface ICreatLegalClientView: IView , IHomeButton
     {
         event Action EnterSearch;
-
-        string OrganisationNameLegalClientStr { get; }
-        string UTNLegalClientStr { get; }
     }
 }

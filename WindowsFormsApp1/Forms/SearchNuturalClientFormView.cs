@@ -9,6 +9,12 @@ namespace View
 
         private readonly ApplicationContext _context;
 
+        public string SurnameNuturalClientStr => textBoxSurname.Text;
+
+        public string NameNuturalClientStr => textBoxName.Text;
+
+        public string MinnleNameNuturalClientStr => textBoxMiddleName.Text;
+
         public SearchNuturalClientFormView(ApplicationContext context)
         {
 

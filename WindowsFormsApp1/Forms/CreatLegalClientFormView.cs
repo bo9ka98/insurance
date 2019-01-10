@@ -1,12 +1,19 @@
 ﻿using System;
 using System.Windows.Forms;
+using Presenter;
 
 namespace View
 {
-    public partial class CreatLegalClientFormView : Form
+    public partial class CreatLegalClientFormView : Form, ICreatLegalClientView
     {
-        public CreatLegalClientFormView()
+        private readonly ApplicationContext _context;
+
+        public event Action EnterSearch;
+        public event Action EnterReturnWorkMenu;
+
+        public CreatLegalClientFormView(ApplicationContext context)
         {
+            _context = context;
             InitializeComponent();
         }
 
@@ -26,6 +33,22 @@ namespace View
         }
 
         private void buttonRegistration_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        public new void Show()
+        {
+            _context.MainForm = this;
+            base.Show();
+        }
+
+        private void groupBoxAccountantAlias_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TextBoxUTN_TextChanged(object sender, EventArgs e)
         {
 
         }

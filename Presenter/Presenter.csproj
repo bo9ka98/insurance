@@ -43,11 +43,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Presenters\CreatLegalClientFormViewPresenter.cs" />
+    <Compile Include="Presenters\CreatLegalClientPresenter.cs" />
+    <Compile Include="Presenters\CreatNuturalClienPresenter.cs" />
     <Compile Include="Presenters\IPresenter.cs" />
     <Compile Include="Presenters\SearchLegalClientPresenter.cs" />
     <Compile Include="Presenters\SearchNuturalClientPresenter.cs" />
     <Compile Include="Presenters\WorkMenuPresenter.cs" />
+    <Compile Include="Views\ICreatLegalClientView.cs" />
+    <Compile Include="Views\ICreatNuturalClienView.cs" />
     <Compile Include="Views\IHomeButton.cs" />
     <Compile Include="Views\ISearchLegalClientView.cs" />
     <Compile Include="Views\ISearchNuturalClientView.cs" />
