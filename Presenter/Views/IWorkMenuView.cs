@@ -8,7 +8,12 @@ namespace Presenter
 {
     public interface IWorkMenuView: IView
     {
-        string SelectionTypeStr { get; }
+        // {readonli} for sellect client type
+        string ClientStr { get; } 
+        string FisClientStr { get; }
+        string JurClientStr { get; }
+
+        string SelectionClientTipeStr { get; }
         event Action EnterButtonNext;
         event Action EnterButtonLogOut;
 

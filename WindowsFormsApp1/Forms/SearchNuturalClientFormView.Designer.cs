@@ -1,6 +1,6 @@
 ﻿namespace View
 {
-    partial class SearchNuturalClientForm
+    partial class SearchNuturalClientFormView
     {
         /// <summary>
         /// Required designer variable.
@@ -111,6 +111,7 @@
             this.buttonSearch.TabIndex = 16;
             this.buttonSearch.Text = "Search";
             this.buttonSearch.UseVisualStyleBackColor = true;
+            this.buttonSearch.Click += new System.EventHandler(this.buttonSearch_Click);
             // 
             // SearchNuturalClientForm
             // 

@@ -181,6 +181,7 @@
             this.labelBoxSurnameStr.Size = new System.Drawing.Size(49, 13);
             this.labelBoxSurnameStr.TabIndex = 38;
             this.labelBoxSurnameStr.Text = "Surname";
+            this.labelBoxSurnameStr.Click += new System.EventHandler(this.labelBoxSurnameStr_Click);
             // 
             // labelNameStr
             // 

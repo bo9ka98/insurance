@@ -19,6 +19,7 @@ namespace Presenter
 
         private void EnterLogin(string loginStr, string passStr, bool superuserFlag)
         {
+            // тут лежит куча логики
             _kernel.Get<WorkMenuPresenter>().Run();
             _view.Close();
         }

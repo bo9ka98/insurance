@@ -158,7 +158,7 @@
         private System.Windows.Forms.Button buttonArrangePayment;
         private System.Windows.Forms.Button buttonPolice;
         private System.Windows.Forms.Button buttonLogOut;
-        private System.Windows.Forms.ComboBox comboBoxSelectionClientTipe;
         private System.Windows.Forms.Label label1;
+        public System.Windows.Forms.ComboBox comboBoxSelectionClientTipe;
     }
 }

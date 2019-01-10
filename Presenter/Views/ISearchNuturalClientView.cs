@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Presenter.View
+namespace Presenter
 {
-    interface ISearchNuturalClientView : IView
+    public interface ISearchNuturalClientView : IView , IHomeButton
     {
+        event Action EnterSearch;
     }
 }

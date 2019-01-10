@@ -1,9 +1,8 @@
 ﻿using Ninject;
-using Presenter.View;
 
-namespace Presenter.Presenter
+namespace Presenter
 {
-    class SearchNuturalClientPresenter : IPresenter
+    public class SearchNuturalClientPresenter : IPresenter
     {
         private readonly IKernel _kernel;
         private readonly ISearchNuturalClientView _view;
@@ -13,15 +12,9 @@ namespace Presenter.Presenter
         {
             _kernel = kernel;
             _view = view;
-
-            //_view.EnterLogin += () => null;
+           
         }
 
-        private void EnterSearch()
-        {
-            _kernel.Get<WorkMenuPresenter>().Run();
-            _view.Close();
-        }
         public void Run()
         {
             _view.Show();

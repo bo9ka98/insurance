@@ -1,6 +1,6 @@
 ﻿namespace View
 {
-    partial class SearchLegalClientForm
+    partial class SearchLegalClientFormView
     {
         /// <summary>
         /// Required designer variable.
@@ -79,6 +79,7 @@
             this.buttonSearch.TabIndex = 24;
             this.buttonSearch.Text = "Search";
             this.buttonSearch.UseVisualStyleBackColor = true;
+            this.buttonSearch.Click += new System.EventHandler(this.buttonSearch_Click);
             // 
             // SearchLegalClientForm
             // 

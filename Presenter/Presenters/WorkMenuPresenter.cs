@@ -14,9 +14,22 @@ namespace Presenter
             _view = view;
 
             _view.EnterButtonLogOut += () => EnterButtonLogOut();
-            //_view.EnterLogin += () => EnterLogin(_view.LoginString, _view.PassString, _view.SuperuserFlag);
+            _view.EnterButtonNext += () => EnterButtonNext(_view.SelectionClientTipeStr);
         }
 
+        public void EnterButtonNext(string clientType)
+        {
+            if (clientType == _view.FisClientStr)
+            {
+                _kernel.Get<SearchNuturalClientPresenter>().Run();
+                _view.Close();
+            }else if(clientType == _view.JurClientStr)
+            {
+                _kernel.Get<SearchLegalClientPresenter>().Run();
+                _view.Close();
+            }
+
+        }
         public void EnterButtonLogOut()
         {
             _kernel.Get<StartLoginPresenter>().Run();

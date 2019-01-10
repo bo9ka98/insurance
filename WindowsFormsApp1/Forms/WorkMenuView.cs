@@ -9,17 +9,23 @@ namespace View
 
         private readonly ApplicationContext _context;
 
-        public string SelectionTypeStr => comboBoxSelectionClientTipe.Text;
+        public WorkMenuView(ApplicationContext context)
+        {
+
+            _context = context;
+            InitializeComponent();
+        }
 
         public event Action EnterButtonNext;
         public event Action EnterButtonLogOut;
 
-        public WorkMenuView(ApplicationContext context)
-        {
-           
-            _context = context;
-            InitializeComponent();
-        }
+        public string ClientStr => "both types";
+        public string FisClientStr => "natural person";
+        public string JurClientStr => "legal person";
+
+        public string SelectionClientTipeStr => comboBoxSelectionClientTipe.Text;
+
+
 
         private void WorkMenu_Load(object sender, EventArgs e)
         {
@@ -46,15 +52,15 @@ namespace View
                 buttonClients.Enabled = true;
                 buttonPolice.Enabled = true;
             }
-            if (comboBoxSelectionClientTipe.Text == "both types" && flag != 1)
+            if (comboBoxSelectionClientTipe.Text == ClientStr && flag != 1)
             {
                 buttonIssuePolicy.Enabled = false;
                 buttonStateIncident.Enabled = false;
                 buttonArrangePayment.Enabled = false;
                 flag = 1;
 
-            }else if (comboBoxSelectionClientTipe.Text == "natural person" 
-                || comboBoxSelectionClientTipe.Text == "legal person" 
+            }else if (comboBoxSelectionClientTipe.Text == FisClientStr
+                || comboBoxSelectionClientTipe.Text == JurClientStr
                 && flag != 2)
             {
                 buttonIssuePolicy.Enabled = true;
@@ -66,32 +72,38 @@ namespace View
 
         private void buttonLogOut_Click(object sender, EventArgs e)
         {
-            EnterButtonLogOut?.Invoke();
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            //MessageBox.Show("lol");
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void buttonArrangePayment_Click(object sender, EventArgs e)
-        {
-            //MessageBox.Show("lol");
+            EnterButtonNext?.Invoke();
         }
 
         private void buttonStateIncident_Click(object sender, EventArgs e)
         {
-
+            EnterButtonLogOut?.Invoke();
         }
+
+        private void buttonArrangePayment_Click(object sender, EventArgs e)
+        {
+            EnterButtonLogOut?.Invoke();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            EnterButtonLogOut?.Invoke();
+        }
+        private void button5_Click(object sender, EventArgs e)
+        {
+            EnterButtonLogOut?.Invoke();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            EnterButtonNext?.Invoke();
+        }
+
+
+    
+
+      
+
+      
     }
 }

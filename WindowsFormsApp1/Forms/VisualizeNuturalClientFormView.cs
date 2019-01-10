@@ -22,5 +22,10 @@ namespace View
            MessageBox.Show(dateTimePickerDataCar.Value.ToShortTimeString());
             dateTimePickerDateOfBirth.Value = dateTimePickerDataCar.Value;
         }
+
+        private void labelBoxSurnameStr_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
