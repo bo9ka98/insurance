@@ -37,7 +37,7 @@
             this.labelDateOfBirth = new System.Windows.Forms.Label();
             this.dateTimePickerDateOfBirth = new System.Windows.Forms.DateTimePicker();
             this.labelDateIssueRights = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePickerDataCar = new System.Windows.Forms.DateTimePicker();
             this.labelPhoneNumber = new System.Windows.Forms.Label();
             this.labelAddress = new System.Windows.Forms.Label();
             this.textBoxPhoneNumber = new System.Windows.Forms.TextBox();
@@ -124,12 +124,12 @@
             this.labelDateIssueRights.TabIndex = 8;
             this.labelDateIssueRights.Text = "Дата выдачи прав";
             // 
-            // dateTimePicker1
+            // dateTimePickerDataCar
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(176, 195);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(155, 20);
-            this.dateTimePicker1.TabIndex = 9;
+            this.dateTimePickerDataCar.Location = new System.Drawing.Point(176, 195);
+            this.dateTimePickerDataCar.Name = "dateTimePickerDataCar";
+            this.dateTimePickerDataCar.Size = new System.Drawing.Size(155, 20);
+            this.dateTimePickerDataCar.TabIndex = 9;
             // 
             // labelPhoneNumber
             // 
@@ -222,7 +222,7 @@
             this.Controls.Add(this.textBoxPhoneNumber);
             this.Controls.Add(this.labelAddress);
             this.Controls.Add(this.labelPhoneNumber);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.dateTimePickerDataCar);
             this.Controls.Add(this.labelDateIssueRights);
             this.Controls.Add(this.dateTimePickerDateOfBirth);
             this.Controls.Add(this.labelDateOfBirth);
@@ -252,7 +252,7 @@
         private System.Windows.Forms.Label labelDateOfBirth;
         private System.Windows.Forms.DateTimePicker dateTimePickerDateOfBirth;
         private System.Windows.Forms.Label labelDateIssueRights;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dateTimePickerDataCar;
         private System.Windows.Forms.Label labelPhoneNumber;
         private System.Windows.Forms.Label labelAddress;
         private System.Windows.Forms.TextBox textBoxPhoneNumber;

@@ -45,7 +45,9 @@
   <ItemGroup>
     <Compile Include="Presenter\CreatLegalClientFormViewPresenter.cs" />
     <Compile Include="Presenter\IPresenter.cs" />
+    <Compile Include="Presenter\SearchNuturalClientPresenter.cs" />
     <Compile Include="Presenter\WorkMenuPresenter.cs" />
+    <Compile Include="View\ISearchNuturalClientView.cs" />
     <Compile Include="View\IStartLoginView.cs" />
     <Compile Include="View\IView.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
