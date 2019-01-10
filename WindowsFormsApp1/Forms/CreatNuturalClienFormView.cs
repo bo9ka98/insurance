@@ -10,24 +10,24 @@ using System.Windows.Forms;
 
 namespace View
 {
-    public partial class CreatLegalClientFormView : Form
+    public partial class CreatNuturalClienFormView : Form
     {
-        public CreatLegalClientFormView()
+        public CreatNuturalClienFormView()
         {
             InitializeComponent();
         }
 
-        private void label5_Click(object sender, EventArgs e)
+        private void textBoxName_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void label4_Click(object sender, EventArgs e)
+        private void CreatNuturalClienFormView_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void CreatLegalClientFormView_Load(object sender, EventArgs e)
+        private void buttonRegistration_Click(object sender, EventArgs e)
         {
 
         }

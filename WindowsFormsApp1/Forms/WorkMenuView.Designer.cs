@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApp1
+﻿namespace View
 {
     partial class WorkMenuView
     {
@@ -34,7 +34,7 @@
             this.buttonArrangePayment = new System.Windows.Forms.Button();
             this.buttonPolice = new System.Windows.Forms.Button();
             this.buttonLogOut = new System.Windows.Forms.Button();
-            this.comboBoxClientTipe = new System.Windows.Forms.ComboBox();
+            this.comboBoxSelectionClientTipe = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -58,6 +58,7 @@
             this.buttonStateIncident.TabIndex = 1;
             this.buttonStateIncident.Text = " state incident";
             this.buttonStateIncident.UseVisualStyleBackColor = true;
+            this.buttonStateIncident.Click += new System.EventHandler(this.buttonStateIncident_Click);
             // 
             // buttonClients
             // 
@@ -101,21 +102,22 @@
             this.buttonLogOut.TabIndex = 5;
             this.buttonLogOut.Text = "LogOut";
             this.buttonLogOut.UseVisualStyleBackColor = true;
+            this.buttonLogOut.Click += new System.EventHandler(this.buttonLogOut_Click);
             // 
-            // comboBoxClientTipe
+            // comboBoxSelectionClientTipe
             // 
-            this.comboBoxClientTipe.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxClientTipe.FormattingEnabled = true;
-            this.comboBoxClientTipe.Items.AddRange(new object[] {
+            this.comboBoxSelectionClientTipe.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxSelectionClientTipe.FormattingEnabled = true;
+            this.comboBoxSelectionClientTipe.Items.AddRange(new object[] {
             "both types",
             "natural person",
             "legal person"});
-            this.comboBoxClientTipe.Location = new System.Drawing.Point(191, 56);
-            this.comboBoxClientTipe.Name = "comboBoxClientTipe";
-            this.comboBoxClientTipe.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.comboBoxClientTipe.Size = new System.Drawing.Size(138, 21);
-            this.comboBoxClientTipe.TabIndex = 9;
-            this.comboBoxClientTipe.SelectedIndexChanged += new System.EventHandler(this.comboBoxTipeClient_SelectedIndexChanged);
+            this.comboBoxSelectionClientTipe.Location = new System.Drawing.Point(191, 56);
+            this.comboBoxSelectionClientTipe.Name = "comboBoxSelectionClientTipe";
+            this.comboBoxSelectionClientTipe.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.comboBoxSelectionClientTipe.Size = new System.Drawing.Size(138, 21);
+            this.comboBoxSelectionClientTipe.TabIndex = 9;
+            this.comboBoxSelectionClientTipe.SelectedIndexChanged += new System.EventHandler(this.comboBoxTipeClient_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -133,7 +135,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.comboBoxClientTipe);
+            this.Controls.Add(this.comboBoxSelectionClientTipe);
             this.Controls.Add(this.buttonLogOut);
             this.Controls.Add(this.buttonPolice);
             this.Controls.Add(this.buttonArrangePayment);
@@ -156,7 +158,7 @@
         private System.Windows.Forms.Button buttonArrangePayment;
         private System.Windows.Forms.Button buttonPolice;
         private System.Windows.Forms.Button buttonLogOut;
-        private System.Windows.Forms.ComboBox comboBoxClientTipe;
+        private System.Windows.Forms.ComboBox comboBoxSelectionClientTipe;
         private System.Windows.Forms.Label label1;
     }
 }

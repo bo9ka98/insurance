@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Presenter\CreatLegalClientFormViewPresenter.cs" />
     <Compile Include="Presenter\IPresenter.cs" />
     <Compile Include="Presenter\WorkMenuPresenter.cs" />
     <Compile Include="View\IStartLoginView.cs" />

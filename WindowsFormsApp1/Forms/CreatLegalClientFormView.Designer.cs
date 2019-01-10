@@ -262,6 +262,7 @@
             this.buttonRegistration.TabIndex = 29;
             this.buttonRegistration.Text = "Registration";
             this.buttonRegistration.UseVisualStyleBackColor = true;
+            this.buttonRegistration.Click += new System.EventHandler(this.buttonRegistration_Click);
             // 
             // CreatLegalClientFormView
             // 

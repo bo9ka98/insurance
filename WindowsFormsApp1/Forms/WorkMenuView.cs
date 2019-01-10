@@ -2,14 +2,17 @@
 using System.Windows.Forms;
 using Presenter;
 
-namespace WindowsFormsApp1
+namespace View
 {
     public partial class WorkMenuView : Form, IWorkMenuView
     {
 
         private readonly ApplicationContext _context;
 
-        public event Action EnterButton;
+        public string SelectionTypeStr => comboBoxSelectionClientTipe.Text;
+
+        public event Action EnterButtonNext;
+        public event Action EnterButtonLogOut;
 
         public WorkMenuView(ApplicationContext context)
         {
@@ -23,22 +26,9 @@ namespace WindowsFormsApp1
             buttonIssuePolicy.Enabled = false;
             buttonStateIncident.Enabled = false;
             buttonArrangePayment.Enabled = false;
+            buttonClients.Enabled = false;
+            buttonPolice.Enabled = false;
             
-
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("lol");
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
 
         }
 
@@ -51,15 +41,20 @@ namespace WindowsFormsApp1
         private void comboBoxTipeClient_SelectedIndexChanged(object sender, EventArgs e)
         {
             int flag = 0;
-            //MessageBox.Show(comboBoxClientTipe.Text);
-            if (comboBoxClientTipe.Text == "both types" && flag != 1)
+            if (flag == 0)
+            {
+                buttonClients.Enabled = true;
+                buttonPolice.Enabled = true;
+            }
+            if (comboBoxSelectionClientTipe.Text == "both types" && flag != 1)
             {
                 buttonIssuePolicy.Enabled = false;
                 buttonStateIncident.Enabled = false;
                 buttonArrangePayment.Enabled = false;
                 flag = 1;
 
-            }else if (comboBoxClientTipe.Text == "natural person" || comboBoxClientTipe.Text == "legal person" 
+            }else if (comboBoxSelectionClientTipe.Text == "natural person" 
+                || comboBoxSelectionClientTipe.Text == "legal person" 
                 && flag != 2)
             {
                 buttonIssuePolicy.Enabled = true;
@@ -69,9 +64,34 @@ namespace WindowsFormsApp1
             }
         }
 
+        private void buttonLogOut_Click(object sender, EventArgs e)
+        {
+            EnterButtonLogOut?.Invoke();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //MessageBox.Show("lol");
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void buttonArrangePayment_Click(object sender, EventArgs e)
         {
             //MessageBox.Show("lol");
+        }
+
+        private void buttonStateIncident_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

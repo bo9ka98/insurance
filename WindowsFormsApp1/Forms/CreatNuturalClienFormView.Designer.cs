@@ -206,6 +206,7 @@
             this.buttonRegistration.TabIndex = 18;
             this.buttonRegistration.Text = "Registration";
             this.buttonRegistration.UseVisualStyleBackColor = true;
+            this.buttonRegistration.Click += new System.EventHandler(this.buttonRegistration_Click);
             // 
             // CreatNuturalClienFormView
             // 

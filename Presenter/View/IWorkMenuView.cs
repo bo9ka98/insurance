@@ -8,6 +8,10 @@ namespace Presenter
 {
     public interface IWorkMenuView: IView
     {
-        event Action EnterButton;
+        string SelectionTypeStr { get; }
+        event Action EnterButtonNext;
+        event Action EnterButtonLogOut;
+
+
     }
 }

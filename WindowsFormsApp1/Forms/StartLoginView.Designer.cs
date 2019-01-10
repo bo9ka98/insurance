@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApp1
+﻿namespace View
 {
     partial class StartLoginView
     {
@@ -70,7 +70,7 @@
             this.textBoxPass.Name = "textBoxPass";
             this.textBoxPass.Size = new System.Drawing.Size(100, 20);
             this.textBoxPass.TabIndex = 3;
-            this.textBoxPass.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.textBoxPass.TextChanged += new System.EventHandler(this.TextBox2_TextChanged);
             // 
             // textBaxLogin
             // 
@@ -78,7 +78,7 @@
             this.textBaxLogin.Name = "textBaxLogin";
             this.textBaxLogin.Size = new System.Drawing.Size(100, 20);
             this.textBaxLogin.TabIndex = 2;
-            this.textBaxLogin.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.textBaxLogin.TextChanged += new System.EventHandler(this.TextBox1_TextChanged);
             // 
             // labelPass
             // 

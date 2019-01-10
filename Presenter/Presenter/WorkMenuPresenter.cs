@@ -1,9 +1,4 @@
 ﻿using Ninject;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Presenter
 {
@@ -18,9 +13,15 @@ namespace Presenter
             _kernel = kernel;
             _view = view;
 
+            _view.EnterButtonLogOut += () => EnterButtonLogOut();
             //_view.EnterLogin += () => EnterLogin(_view.LoginString, _view.PassString, _view.SuperuserFlag);
         }
 
+        public void EnterButtonLogOut()
+        {
+            _kernel.Get<StartLoginPresenter>().Run();
+            _view.Close();
+        }
         public void Run()
         {
             _view.Show();
