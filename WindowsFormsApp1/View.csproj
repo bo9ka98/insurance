@@ -47,26 +47,68 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\CreatLegalClientFormView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CreatLegalClientFormView.Designer.cs">
+      <DependentUpon>CreatLegalClientFormView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CreatNuturalClienFormView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CreatNuturalClienFormView.Designer.cs">
+      <DependentUpon>CreatNuturalClienFormView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="StartLoginView.cs">
+    <Compile Include="Forms\StartLoginView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="StartLoginView.Designer.cs">
+    <Compile Include="Forms\StartLoginView.Designer.cs">
       <DependentUpon>StartLoginView.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="WorkMenu.cs">
+    <Compile Include="Forms\WorkMenuView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="WorkMenu.Designer.cs">
-      <DependentUpon>WorkMenu.cs</DependentUpon>
+    <Compile Include="Forms\WorkMenuView.Designer.cs">
+      <DependentUpon>WorkMenuView.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\SearchLegalClientFormView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SearchLegalClientFormView.Designer.cs">
+      <DependentUpon>SearchLegalClientFormView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SearchNuturalClientFormView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SearchNuturalClientFormView.Designer.cs">
+      <DependentUpon>SearchNuturalClientFormView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\VisualizeLegalClientFormView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\VisualizeLegalClientFormView.Designer.cs">
+      <DependentUpon>VisualizeLegalClientFormView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\VisualizeNuturalClientFormView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\VisualizeNuturalClientFormView.Designer.cs">
+      <DependentUpon>VisualizeNuturalClientFormView.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Forms\CreatLegalClientFormView.resx">
+      <DependentUpon>CreatLegalClientFormView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CreatNuturalClienFormView.resx">
+      <DependentUpon>CreatNuturalClienFormView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -80,8 +122,23 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="StartLoginView.resx">
+    <EmbeddedResource Include="Forms\StartLoginView.resx">
       <DependentUpon>StartLoginView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\WorkMenuView.resx">
+      <DependentUpon>WorkMenuView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SearchLegalClientFormView.resx">
+      <DependentUpon>SearchLegalClientFormView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SearchNuturalClientFormView.resx">
+      <DependentUpon>SearchNuturalClientFormView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\VisualizeLegalClientFormView.resx">
+      <DependentUpon>VisualizeLegalClientFormView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\VisualizeNuturalClientFormView.resx">
+      <DependentUpon>VisualizeNuturalClientFormView.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

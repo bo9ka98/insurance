@@ -2,11 +2,17 @@
 using System.Windows.Forms;
 using Presenter;
 
-namespace WindowsFormsApp1
+namespace View
 {
     public partial class StartLoginView : Form, IStartLoginView
     {
         private readonly ApplicationContext _context;
+
+        public StartLoginView(ApplicationContext context)
+        {
+            _context = context; 
+            InitializeComponent();
+        }
 
         public event Action EnterLogin;
 
@@ -15,22 +21,6 @@ namespace WindowsFormsApp1
         public string PassString => textBoxPass.Text;
 
         public bool SuperuserFlag => checkBoxSuperuser.Checked;
-
-        public StartLoginView(ApplicationContext context)
-        {
-            _context = context; 
-            InitializeComponent();
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
@@ -52,6 +42,14 @@ namespace WindowsFormsApp1
         public void ShowError(string massage)
         {
             throw new NotImplementedException();
+        }
+
+        private void TextBox1_TextChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void TextBox2_TextChanged(object sender, EventArgs e)
+        {
         }
     }
 }

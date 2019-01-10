@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WindowsFormsApp1
+namespace View
 {
-    public partial class WorkMenu : Form
+    public partial class VisualizeLegalClientFormView : Form
     {
-        public WorkMenu()
+        public VisualizeLegalClientFormView()
         {
             InitializeComponent();
         }

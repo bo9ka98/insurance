@@ -51,12 +51,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="entity\Alias.cs" />
-    <Compile Include="entity\Companu.cs" />
-    <Compile Include="entity\IClient.cs" />
-    <Compile Include="entity\LegalСlient.cs" />
-    <Compile Include="entity\Man.cs" />
-    <Compile Include="entity\PhysicalClient.cs" />
+    <Compile Include="entity\client\Alias.cs" />
+    <Compile Include="entity\client\Companu.cs" />
+    <Compile Include="entity\client\IClient.cs" />
+    <Compile Include="entity\client\LegalСlient.cs" />
+    <Compile Include="entity\client\Man.cs" />
+    <Compile Include="entity\client\NuturalClient.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -78,6 +78,8 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="entity\policy\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
