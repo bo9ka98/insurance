@@ -19,12 +19,21 @@ namespace Presenter
             _viewCreat = viewCreat;
             _viewVisual = viewVisual;
 
+           
+            _viewCreat.TransmitDataOfCreatAtVisualizeLegalClient += TransmitDataOfCreatAtVisualizeLegalClient;
             _viewSearch.TransmitDataOfSearchAtCreatLegalClient += TransmitDataOfSearchAtCreatLegalClient;
         }
 
         private void TransmitDataOfSearchAtCreatLegalClient(AliasCompanu aliasCompanu)
         {
+            _viewSearch.Close();
             Run(aliasCompanu);
+            
+        }
+
+        private void TransmitDataOfCreatAtVisualizeLegalClient(LegalСlient legalClient)
+        {
+            Run(legalClient);
         }
         public void Run()
         {
@@ -32,6 +41,12 @@ namespace Presenter
         }
 
         public void Run(AliasCompanu aliasCompanu)
+        {
+            _viewCreat.setAliasCompanu(aliasCompanu);
+            _viewCreat.Show();
+        }
+
+        public void Run(LegalСlient legalСlient)
         {
 
             _viewCreat.Show();

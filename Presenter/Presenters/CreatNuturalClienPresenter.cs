@@ -29,7 +29,7 @@ namespace Presenter
 
         public void Run(string surname, string name, string middlename)
         {
-            _view.setSurname_Name_MiddleNameOnForm(surname,name,middlename);
+            _view.setAliasMan(surname,name,middlename);
             _view.Show();
         }
     }

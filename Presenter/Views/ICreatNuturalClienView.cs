@@ -10,7 +10,7 @@ namespace Presenter
     {
         event Delegates.TransmitDataOfCreatAtVisualizeNuturalClient ViewDataMan;
 
-        void setSurname_Name_MiddleNameOnForm (string surname, string name, string middlename);
+        void setAliasMan (string surname, string name, string middlename);
 
     }
 }

@@ -31,11 +31,11 @@ namespace View
             kernel.Bind<StartLoginPresenter>().ToSelf();
             kernel.Bind<WorkMenuPresenter>().ToSelf();
             kernel.Bind<SearchNuturalClientPresenter>().ToSelf();
-            kernel.Bind<SearchLegalClientPresenter>().ToSelf();
+            //kernel.Bind<SearchLegalClientPresenter>().ToSelf();
             kernel.Bind<CreatNuturalClienPresenter>().ToSelf();
-            kernel.Bind<CreatLegalClientPresenter>().ToSelf();
+            //kernel.Bind<CreatLegalClientPresenter>().ToSelf();
             kernel.Bind<VisualizeNuturalClientPresenter>().ToSelf();
-
+            kernel.Bind<SelectLegalClientPresenter>().ToSelf();
 
             kernel.Bind<IClientDataService<NuturalClient>>().To<NuturalClientDataService>().InSingletonScope();
             kernel.Bind<NuturalClientDao>().ToSelf().InSingletonScope();

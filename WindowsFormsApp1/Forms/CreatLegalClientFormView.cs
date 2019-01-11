@@ -41,8 +41,11 @@ namespace View
 
         private void buttonRegistration_Click(object sender, EventArgs e)
         {
-            LegalСlient legalСlient = new LegalСlient()
-            TransmitDataOfCreatAtVisualizeLegalClient?.Invoke();
+            LegalСlient legalСlient = new LegalСlient(new AliasCompanu(tB_CompanuName.Text, tB_UTN.Text),
+                new AliasMan(tB_SurnameDirector.Text, tB_NameDirector.Text, tB_MiddleNameDirector.Text),
+                new AliasMan(tB_SurnameAccountant.Text, tB_NameAccountant.Text, tB_MiddleNameAccountant.Text),
+                tB_OrganisationAddress.Text, tB_OrganisationPhone.Text);
+            TransmitDataOfCreatAtVisualizeLegalClient?.Invoke(legalСlient);
         }
 
         public new void Show()

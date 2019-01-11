@@ -18,7 +18,7 @@ namespace View
             InitializeComponent();
         }
 
-        public void setSurname_Name_MiddleNameOnForm(string surname, string name, string middlename)
+        public void setAliasMan(string surname, string name, string middlename)
         {
             tB_Surname.Text = surname;
             tB_Name.Text = name;
