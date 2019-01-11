@@ -37,9 +37,9 @@ namespace View
 
         private void buttonRegistration_Click(object sender, EventArgs e)
         {
-            Man man = new Man(new AliasMan(tB_Surname.Text, tB_Name.Text, tB_MiddleName.Text),
+            NuturalClient nuturalClient = new NuturalClient(new AliasMan(tB_Surname.Text, tB_Name.Text, tB_MiddleName.Text),
                 dTP_DateOfBirth.Value, dTP_DataCar.Value, cB_Sex.Text, tB_Address.Text, tB_PhoneNumber.Text);
-            ViewDataMan?.Invoke(man);
+            ViewDataMan?.Invoke(nuturalClient);
         }
 
         public new void Show()

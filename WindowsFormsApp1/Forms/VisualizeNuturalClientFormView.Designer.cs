@@ -66,7 +66,7 @@
             // l_ExperienceViewStr
             // 
             this.l_ExperienceViewStr.AutoSize = true;
-            this.l_ExperienceViewStr.Location = new System.Drawing.Point(211, 254);
+            this.l_ExperienceViewStr.Location = new System.Drawing.Point(208, 254);
             this.l_ExperienceViewStr.Name = "l_ExperienceViewStr";
             this.l_ExperienceViewStr.Size = new System.Drawing.Size(13, 13);
             this.l_ExperienceViewStr.TabIndex = 36;
@@ -216,6 +216,7 @@
             this.buttonEdit.TabIndex = 50;
             this.buttonEdit.Text = "Edit";
             this.buttonEdit.UseVisualStyleBackColor = true;
+            this.buttonEdit.Click += new System.EventHandler(this.buttonEdit_Click);
             // 
             // label2
             // 
@@ -231,9 +232,9 @@
             this.l_Sex.AutoSize = true;
             this.l_Sex.Location = new System.Drawing.Point(208, 189);
             this.l_Sex.Name = "l_Sex";
-            this.l_Sex.Size = new System.Drawing.Size(27, 13);
+            this.l_Sex.Size = new System.Drawing.Size(25, 13);
             this.l_Sex.TabIndex = 52;
-            this.l_Sex.Text = "Пол";
+            this.l_Sex.Text = "Sex";
             // 
             // l_DateOfBirth
             // 

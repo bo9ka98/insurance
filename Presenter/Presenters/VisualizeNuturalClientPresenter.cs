@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Ninject;
 using Model;
+using System.Collections;
 
 namespace Presenter
 {
@@ -12,27 +13,40 @@ namespace Presenter
     {
         private readonly IKernel _kernel;
         private readonly IVisualizeNuturalClientView _view;
-
-        public VisualizeNuturalClientPresenter(IKernel kernel, IVisualizeNuturalClientView view)
+        private readonly IClientDataService<NuturalClient> _data;
+        private NuturalClient client;
+        public VisualizeNuturalClientPresenter(IKernel kernel, IVisualizeNuturalClientView view, IClientDataService<NuturalClient> data)
         {
             _kernel = kernel;
             _view = view;
+            _data = data;
 
-            _view.ViewData += TransmitDataOfCreatAtVisualizeNuturalClient;
+            _view.saveData += () => saveData(client);
+            _view.EnterReturnWorkMenu += () => loadData();
+            //_view.ViewData += TransmitDataOfCreatAtVisualizeNuturalClient;
         }
 
-        private void TransmitDataOfCreatAtVisualizeNuturalClient(Man man)
+        private void saveData(NuturalClient nuturalClient)
         {
-            
+           
+            _data.ListObject = new List<NuturalClient>() {nuturalClient};
+            _kernel.Get<NuturalClientDao>().SerializeList(_data.ListObject);
         }
+
+        private void loadData()
+        {
+            List<NuturalClient> list = _kernel.Get<NuturalClientDao>().DeserializeList();
+        }
+
         public void Run()
         {
             _view.Show();
         }
 
-        public void Run(Man man)
+        public void Run(NuturalClient nuturalClient)
         {
-            _view.SetManData(man);
+            client = nuturalClient;
+            _view.SetManData(nuturalClient);
             _view.Show();
         }
     }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Model
 {
-    class LegalСlient : Companu, IClient
+    public class LegalСlient : Companu, IClient
     {
         void IClient.SetContract()
         {

@@ -1,47 +1,129 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="Presenter.StartLoginPresenter" BaseTypeListCollapsed="true">
-    <Position X="3.25" Y="1.75" Width="1.5" />
+  <Class Name="Presenter.WorkMenuPresenter" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAEACAAAAAAAAI=</HashCode>
-      <FileName>Presenter\StartLoginPresenter.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAEAAIAIAAAAAAACAAAAAAAAI=</HashCode>
+      <FileName>Presenters\WorkMenuPresenter.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
-  <Class Name="Presenter.WorkMenuPresenter" BaseTypeListCollapsed="true">
-    <Position X="5" Y="1.75" Width="1.5" />
+  <Class Name="Presenter.CreatLegalClientPresenter" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAACAAAAAAAAI=</HashCode>
-      <FileName>Presenter\WorkMenuPresenter.cs</FileName>
+      <FileName>Presenters\CreatLegalClientPresenter.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
-  <Interface Name="Presenter.IPresenter">
-    <Position X="3.75" Y="0.5" Width="1.5" />
+  <Class Name="Presenter.CreatNuturalClienPresenter" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAACAQAAAAAAI=</HashCode>
+      <FileName>Presenters\CreatNuturalClienPresenter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Presenter.SearchLegalClientPresenter" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAEAAAAAAAAAIAACAAAAAAAAI=</HashCode>
+      <FileName>Presenters\SearchLegalClientPresenter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Presenter.SearchNuturalClientPresenter" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAACAIAAAAAAI=</HashCode>
+      <FileName>Presenters\SearchNuturalClientPresenter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Presenter.StartLoginPresenter" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAEACAAAAAAAAI=</HashCode>
+      <FileName>Presenters\StartLoginPresenter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Presenter.VisualizeNuturalClientPresenter" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAEAAAAACAAAAAACAAAAAAAAI=</HashCode>
+      <FileName>Presenters\VisualizeNuturalClientPresenter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Interface Name="Presenter.IPresenter" Collapsed="true">
+    <Position X="0.5" Y="3.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
-      <FileName>Presenter\IPresenter.cs</FileName>
+      <FileName>Presenters\IPresenter.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="Presenter.IStartLoginView">
-    <Position X="7.5" Y="2.25" Width="1.5" />
+  <Interface Name="Presenter.ICreatLegalClientView" Collapsed="true">
+    <Position X="3.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\ICreatLegalClientView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Presenter.ICreatNuturalClienView" Collapsed="true">
+    <Position X="0.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAQAAAAAAA=</HashCode>
+      <FileName>Views\ICreatNuturalClienView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Presenter.IHomeButton" Collapsed="true">
+    <Position X="0.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\IHomeButton.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Presenter.ISearchLegalClientView" Collapsed="true">
+    <Position X="3.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\ISearchLegalClientView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Presenter.ISearchNuturalClientView" Collapsed="true">
+    <Position X="6.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAA=</HashCode>
+      <FileName>Views\ISearchNuturalClientView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Presenter.IStartLoginView" Collapsed="true">
+    <Position X="14" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAEAAAAAAAAAAAAAAASAAAAAAAAAAAIEAAAAAAAAAAA=</HashCode>
-      <FileName>View\IStartLoginView.cs</FileName>
+      <FileName>Views\IStartLoginView.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="Presenter.IView">
-    <Position X="8.75" Y="0.5" Width="1.5" />
+  <Interface Name="Presenter.IView" Collapsed="true">
+    <Position X="3.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAACAAAA=</HashCode>
-      <FileName>View\IView.cs</FileName>
+      <FileName>Views\IView.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="Presenter.IWorkMenuView">
-    <Position X="9.75" Y="2.25" Width="1.5" />
+  <Interface Name="Presenter.IVisualizeNuturalClientView" Collapsed="true">
+    <Position X="0.75" Y="3.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>View\IWorkMenuView.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAABACAAAAAAAAAA=</HashCode>
+      <FileName>Views\IVisualizeNuturalClientView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Presenter.IWorkMenuView" Collapsed="true">
+    <Position X="16.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAJAIEAAAAAAAAAAAAAACA=</HashCode>
+      <FileName>Views\IWorkMenuView.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Font Name="Segoe UI" Size="9" />

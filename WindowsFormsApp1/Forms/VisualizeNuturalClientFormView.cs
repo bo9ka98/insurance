@@ -10,7 +10,7 @@ namespace View
         private readonly ApplicationContext _context;
 
         public event Action EnterReturnWorkMenu;
-        public event Delegates.TransmitDataOfCreatAtVisualizeNuturalClient ViewData;
+        public event Action saveData;
 
         public VisualizeNuturalClientFormView(ApplicationContext context)
         {
@@ -18,16 +18,16 @@ namespace View
             InitializeComponent();
         }
 
-        public void SetManData(Man man)
+        public void SetManData(NuturalClient nuturalClient)
         {
-            l_SurnameStr.Text = man.ManAlias.Surname;
-            l_NameStr.Text = man.ManAlias.Name;
-            l_MiddleNameStr.Text = man.ManAlias.MiddleName;
-            l_DateOfBirth.Text = man.DateOfBirth.ToString();
-            l_DataDriving.Text = man.ExperienceDrivingCar.ToString();
-            l_Sex.Text = man.Sex;
-            l_AddressStr.Text = man.AddressResidence;
-            l_PhoneNumberStr.Text = man.PhoneNumber;
+            l_SurnameStr.Text = nuturalClient.ManAlias.Surname;
+            l_NameStr.Text = nuturalClient.ManAlias.Name;
+            l_MiddleNameStr.Text = nuturalClient.ManAlias.MiddleName;
+            l_DateOfBirth.Text = nuturalClient.DateOfBirth.ToString();
+            l_DataDriving.Text = nuturalClient.ExperienceDrivingCar.ToString();
+            l_Sex.Text = nuturalClient.Sex;
+            l_AddressStr.Text = nuturalClient.AddressResidence;
+            l_PhoneNumberStr.Text = nuturalClient.PhoneNumber;
             
         }
 
@@ -43,7 +43,7 @@ namespace View
 
         private void buttonAccept_Click(object sender, EventArgs e)
         {
-
+            saveData?.Invoke();
         }
 
         public new void Show()
@@ -60,6 +60,11 @@ namespace View
         private void l_DateOfBirth_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void buttonEdit_Click(object sender, EventArgs e)
+        {
+            EnterReturnWorkMenu?.Invoke();
         }
     }
 }

@@ -6,7 +6,7 @@ namespace Presenter
     {
         public delegate void TransmitDataOfSearchAtCreatNuturalClient(string surname, string name, string middlename);
         public delegate void TransmitDataOfSearchAtCreatLegalClient(string organisationName, string utn);
-        public delegate void TransmitDataOfCreatAtVisualizeNuturalClient(Man man);
+        public delegate void TransmitDataOfCreatAtVisualizeNuturalClient(NuturalClient nuturalClient);
     }
 
 }

@@ -6,8 +6,20 @@ using System.Threading.Tasks;
 
 namespace Model
 {
-    class NuturalClient : Man, IClient
+    [Serializable]
+    public class NuturalClient : Man, IClient
     {
+        public NuturalClient(AliasMan aliasMan, DateTime dateOfBirth, DateTime experienceDrivingCar,
+           string sex, string address, string phone)
+        {
+            ManAlias = aliasMan;
+            DateOfBirth = dateOfBirth;
+            ExperienceDrivingCar = experienceDrivingCar;
+            Sex = sex;
+            AddressResidence = address;
+            PhoneNumber = phone;
+        }
+
         void IClient.SetContract()
         {
             throw new NotImplementedException();

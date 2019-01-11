@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Model
 {
+
     public class Companu
     {
         public AliasCompanu CompanuAlias { get; set; }

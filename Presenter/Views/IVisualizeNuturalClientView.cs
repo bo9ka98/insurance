@@ -9,8 +9,8 @@ namespace Presenter
 {
     public interface IVisualizeNuturalClientView : IView, IHomeButton
     {
-        event Delegates.TransmitDataOfCreatAtVisualizeNuturalClient ViewData;
-
-        void SetManData(Man man);
+        //event Delegates.TransmitDataOfCreatAtVisualizeNuturalClient ViewData;
+        event Action saveData;
+        void SetManData(NuturalClient nuturalClient);
     }
 }

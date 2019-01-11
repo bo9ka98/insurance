@@ -17,9 +17,9 @@ namespace Presenter
             _view.ViewDataMan += ViewDataMan;
         }
 
-        private void ViewDataMan(Man man)
+        private void ViewDataMan(NuturalClient nuturalClient)
         {
-            _kernel.Get<VisualizeNuturalClientPresenter>().Run(man);
+            _kernel.Get<VisualizeNuturalClientPresenter>().Run(nuturalClient);
             //_view.Close();
         }
         public void Run()

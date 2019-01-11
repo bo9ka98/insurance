@@ -1,7 +1,10 @@
 ﻿using System;
 using System.Windows.Forms;
+using System.Runtime.Serialization.Formatters.Binary;
 using Ninject;
 using Presenter;
+using Model;
+
 
 namespace View
 {
@@ -32,6 +35,9 @@ namespace View
             kernel.Bind<CreatLegalClientPresenter>().ToSelf();
             kernel.Bind<VisualizeNuturalClientPresenter>().ToSelf();
 
+
+            kernel.Bind<IClientDataService<NuturalClient>>().To<NuturalClientDataService>().InSingletonScope();
+            kernel.Bind<NuturalClientDao>().ToSelf().InSingletonScope();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
