@@ -8,7 +8,17 @@ namespace Model
 {
     public class AliasCompanu
     {
-        public int RegistrationNumber { get; set; }
+        public AliasCompanu()
+        {
+
+        }
+
+        public AliasCompanu (string companuName, string registrationNumber)
+        {
+            RegistrationNumber = registrationNumber;
+            CompanuName = companuName;
+        }
+        public string RegistrationNumber { get; set; }
         public string CompanuName { get; set; }
     }
 }

@@ -7,14 +7,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Presenter;
 
 namespace View
 {
-    public partial class VisualizeLegalClientFormView : Form
+    public partial class VisualizeLegalClientFormView : Form , IVisualizeLegalClientView
     {
-        public VisualizeLegalClientFormView()
+        private readonly ApplicationContext _context;
+
+        public VisualizeLegalClientFormView(ApplicationContext context)
         {
+            _context = context;
             InitializeComponent();
         }
+
+        public event Action EnterReturnWorkMenu;
     }
 }

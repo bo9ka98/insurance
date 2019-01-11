@@ -9,6 +9,20 @@ namespace Model
 
     public class Companu
     {
+        public Companu()
+        {
+
+        }
+
+        public Companu(AliasCompanu companuAlias, AliasMan managerAlias, AliasMan accountantAlias,
+           string addressResidence, string phoneNumber)
+        {
+            CompanuAlias = companuAlias;
+            ManagerAlias = managerAlias;
+            AccountantAlias = accountantAlias;
+            AddressResidence = addressResidence;
+            PhoneNumber = phoneNumber;
+        }
         public AliasCompanu CompanuAlias { get; set; }
         public AliasMan ManagerAlias { get; set; }
         public AliasMan AccountantAlias { get; set; }

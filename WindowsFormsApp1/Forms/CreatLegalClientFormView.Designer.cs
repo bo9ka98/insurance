@@ -30,25 +30,25 @@
         {
             this.labelOrganisationPhone = new System.Windows.Forms.Label();
             this.labelAddressCompany = new System.Windows.Forms.Label();
-            this.labelUTN = new System.Windows.Forms.Label();
-            this.labelOrganisationName = new System.Windows.Forms.Label();
-            this.TextBoxOrganisationPhone = new System.Windows.Forms.TextBox();
-            this.TextBoxOrganisationAddress = new System.Windows.Forms.TextBox();
-            this.TextBoxUTN = new System.Windows.Forms.TextBox();
-            this.TextBoxOrganisationName = new System.Windows.Forms.TextBox();
+            this.l_UTN = new System.Windows.Forms.Label();
+            this.l_OrganisationName = new System.Windows.Forms.Label();
+            this.tB_OrganisationPhone = new System.Windows.Forms.TextBox();
+            this.tB_OrganisationAddress = new System.Windows.Forms.TextBox();
+            this.tB_UTN = new System.Windows.Forms.TextBox();
+            this.tB_CompanuName = new System.Windows.Forms.TextBox();
             this.labelMiddleName = new System.Windows.Forms.Label();
             this.labelName = new System.Windows.Forms.Label();
             this.labelSurname = new System.Windows.Forms.Label();
-            this.textBoxSurnameDirector = new System.Windows.Forms.TextBox();
-            this.textBoxNameDirector = new System.Windows.Forms.TextBox();
-            this.textBoxMiddleNameDirector = new System.Windows.Forms.TextBox();
+            this.tB_SurnameDirector = new System.Windows.Forms.TextBox();
+            this.tB_NameDirector = new System.Windows.Forms.TextBox();
+            this.tB_MiddleNameDirector = new System.Windows.Forms.TextBox();
             this.groupBoxDirectorAlias = new System.Windows.Forms.GroupBox();
             this.groupBoxAccountantAlias = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBoxSurnameAccountant = new System.Windows.Forms.TextBox();
-            this.textBoxMiddleNameAccountant = new System.Windows.Forms.TextBox();
+            this.tB_SurnameAccountant = new System.Windows.Forms.TextBox();
+            this.tB_MiddleNameAccountant = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBoxNameAccountant = new System.Windows.Forms.TextBox();
+            this.tB_NameAccountant = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.buttonRegistration = new System.Windows.Forms.Button();
             this.groupBoxDirectorAlias.SuspendLayout();
@@ -76,58 +76,59 @@
             this.labelAddressCompany.Text = "Адрес организации";
             this.labelAddressCompany.Click += new System.EventHandler(this.label5_Click);
             // 
-            // labelUTN
+            // l_UTN
             // 
-            this.labelUTN.AutoSize = true;
-            this.labelUTN.Location = new System.Drawing.Point(137, 84);
-            this.labelUTN.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelUTN.Name = "labelUTN";
-            this.labelUTN.Size = new System.Drawing.Size(31, 13);
-            this.labelUTN.TabIndex = 19;
-            this.labelUTN.Text = "УНН";
+            this.l_UTN.AutoSize = true;
+            this.l_UTN.Location = new System.Drawing.Point(137, 84);
+            this.l_UTN.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.l_UTN.Name = "l_UTN";
+            this.l_UTN.Size = new System.Drawing.Size(31, 13);
+            this.l_UTN.TabIndex = 19;
+            this.l_UTN.Text = "УНН";
             // 
-            // labelOrganisationName
+            // l_OrganisationName
             // 
-            this.labelOrganisationName.AutoSize = true;
-            this.labelOrganisationName.Location = new System.Drawing.Point(43, 46);
-            this.labelOrganisationName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelOrganisationName.Name = "labelOrganisationName";
-            this.labelOrganisationName.Size = new System.Drawing.Size(125, 13);
-            this.labelOrganisationName.TabIndex = 18;
-            this.labelOrganisationName.Text = "Название организации";
+            this.l_OrganisationName.AutoSize = true;
+            this.l_OrganisationName.Location = new System.Drawing.Point(43, 46);
+            this.l_OrganisationName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.l_OrganisationName.Name = "l_OrganisationName";
+            this.l_OrganisationName.Size = new System.Drawing.Size(125, 13);
+            this.l_OrganisationName.TabIndex = 18;
+            this.l_OrganisationName.Text = "Название организации";
             // 
-            // TextBoxOrganisationPhone
+            // tB_OrganisationPhone
             // 
-            this.TextBoxOrganisationPhone.Location = new System.Drawing.Point(172, 342);
-            this.TextBoxOrganisationPhone.Margin = new System.Windows.Forms.Padding(2);
-            this.TextBoxOrganisationPhone.Name = "TextBoxOrganisationPhone";
-            this.TextBoxOrganisationPhone.Size = new System.Drawing.Size(283, 20);
-            this.TextBoxOrganisationPhone.TabIndex = 17;
+            this.tB_OrganisationPhone.Location = new System.Drawing.Point(172, 342);
+            this.tB_OrganisationPhone.Margin = new System.Windows.Forms.Padding(2);
+            this.tB_OrganisationPhone.Name = "tB_OrganisationPhone";
+            this.tB_OrganisationPhone.Size = new System.Drawing.Size(283, 20);
+            this.tB_OrganisationPhone.TabIndex = 17;
             // 
-            // TextBoxOrganisationAddress
+            // tB_OrganisationAddress
             // 
-            this.TextBoxOrganisationAddress.Location = new System.Drawing.Point(173, 302);
-            this.TextBoxOrganisationAddress.Margin = new System.Windows.Forms.Padding(2);
-            this.TextBoxOrganisationAddress.Name = "TextBoxOrganisationAddress";
-            this.TextBoxOrganisationAddress.Size = new System.Drawing.Size(283, 20);
-            this.TextBoxOrganisationAddress.TabIndex = 16;
+            this.tB_OrganisationAddress.Location = new System.Drawing.Point(173, 302);
+            this.tB_OrganisationAddress.Margin = new System.Windows.Forms.Padding(2);
+            this.tB_OrganisationAddress.Name = "tB_OrganisationAddress";
+            this.tB_OrganisationAddress.Size = new System.Drawing.Size(283, 20);
+            this.tB_OrganisationAddress.TabIndex = 16;
             // 
-            // TextBoxUTN
+            // tB_UTN
             // 
-            this.TextBoxUTN.Location = new System.Drawing.Point(173, 84);
-            this.TextBoxUTN.Margin = new System.Windows.Forms.Padding(2);
-            this.TextBoxUTN.Name = "TextBoxUTN";
-            this.TextBoxUTN.Size = new System.Drawing.Size(283, 20);
-            this.TextBoxUTN.TabIndex = 13;
-            this.TextBoxUTN.TextChanged += new System.EventHandler(this.TextBoxUTN_TextChanged);
+            this.tB_UTN.Location = new System.Drawing.Point(173, 84);
+            this.tB_UTN.Margin = new System.Windows.Forms.Padding(2);
+            this.tB_UTN.Name = "tB_UTN";
+            this.tB_UTN.Size = new System.Drawing.Size(283, 20);
+            this.tB_UTN.TabIndex = 13;
+            this.tB_UTN.TextChanged += new System.EventHandler(this.TextBoxUTN_TextChanged);
             // 
-            // TextBoxOrganisationName
+            // tB_CompanuName
             // 
-            this.TextBoxOrganisationName.Location = new System.Drawing.Point(173, 43);
-            this.TextBoxOrganisationName.Margin = new System.Windows.Forms.Padding(2);
-            this.TextBoxOrganisationName.Name = "TextBoxOrganisationName";
-            this.TextBoxOrganisationName.Size = new System.Drawing.Size(283, 20);
-            this.TextBoxOrganisationName.TabIndex = 12;
+            this.tB_CompanuName.Location = new System.Drawing.Point(173, 43);
+            this.tB_CompanuName.Margin = new System.Windows.Forms.Padding(2);
+            this.tB_CompanuName.Name = "tB_CompanuName";
+            this.tB_CompanuName.Size = new System.Drawing.Size(283, 20);
+            this.tB_CompanuName.TabIndex = 12;
+            this.tB_CompanuName.TextChanged += new System.EventHandler(this.tB_OrganisationName_TextChanged);
             // 
             // labelMiddleName
             // 
@@ -156,33 +157,33 @@
             this.labelSurname.TabIndex = 26;
             this.labelSurname.Text = "Фамилия";
             // 
-            // textBoxSurnameDirector
+            // tB_SurnameDirector
             // 
-            this.textBoxSurnameDirector.Location = new System.Drawing.Point(79, 35);
-            this.textBoxSurnameDirector.Name = "textBoxSurnameDirector";
-            this.textBoxSurnameDirector.Size = new System.Drawing.Size(155, 20);
-            this.textBoxSurnameDirector.TabIndex = 29;
+            this.tB_SurnameDirector.Location = new System.Drawing.Point(79, 35);
+            this.tB_SurnameDirector.Name = "tB_SurnameDirector";
+            this.tB_SurnameDirector.Size = new System.Drawing.Size(155, 20);
+            this.tB_SurnameDirector.TabIndex = 29;
             // 
-            // textBoxNameDirector
+            // tB_NameDirector
             // 
-            this.textBoxNameDirector.Location = new System.Drawing.Point(78, 72);
-            this.textBoxNameDirector.Name = "textBoxNameDirector";
-            this.textBoxNameDirector.Size = new System.Drawing.Size(155, 20);
-            this.textBoxNameDirector.TabIndex = 30;
+            this.tB_NameDirector.Location = new System.Drawing.Point(78, 72);
+            this.tB_NameDirector.Name = "tB_NameDirector";
+            this.tB_NameDirector.Size = new System.Drawing.Size(155, 20);
+            this.tB_NameDirector.TabIndex = 30;
             // 
-            // textBoxMiddleNameDirector
+            // tB_MiddleNameDirector
             // 
-            this.textBoxMiddleNameDirector.Location = new System.Drawing.Point(78, 106);
-            this.textBoxMiddleNameDirector.Name = "textBoxMiddleNameDirector";
-            this.textBoxMiddleNameDirector.Size = new System.Drawing.Size(155, 20);
-            this.textBoxMiddleNameDirector.TabIndex = 31;
+            this.tB_MiddleNameDirector.Location = new System.Drawing.Point(78, 106);
+            this.tB_MiddleNameDirector.Name = "tB_MiddleNameDirector";
+            this.tB_MiddleNameDirector.Size = new System.Drawing.Size(155, 20);
+            this.tB_MiddleNameDirector.TabIndex = 31;
             // 
             // groupBoxDirectorAlias
             // 
             this.groupBoxDirectorAlias.Controls.Add(this.labelSurname);
-            this.groupBoxDirectorAlias.Controls.Add(this.textBoxMiddleNameDirector);
-            this.groupBoxDirectorAlias.Controls.Add(this.textBoxNameDirector);
-            this.groupBoxDirectorAlias.Controls.Add(this.textBoxSurnameDirector);
+            this.groupBoxDirectorAlias.Controls.Add(this.tB_MiddleNameDirector);
+            this.groupBoxDirectorAlias.Controls.Add(this.tB_NameDirector);
+            this.groupBoxDirectorAlias.Controls.Add(this.tB_SurnameDirector);
             this.groupBoxDirectorAlias.Controls.Add(this.labelMiddleName);
             this.groupBoxDirectorAlias.Controls.Add(this.labelName);
             this.groupBoxDirectorAlias.Location = new System.Drawing.Point(46, 124);
@@ -195,10 +196,10 @@
             // groupBoxAccountantAlias
             // 
             this.groupBoxAccountantAlias.Controls.Add(this.label1);
-            this.groupBoxAccountantAlias.Controls.Add(this.textBoxSurnameAccountant);
-            this.groupBoxAccountantAlias.Controls.Add(this.textBoxMiddleNameAccountant);
+            this.groupBoxAccountantAlias.Controls.Add(this.tB_SurnameAccountant);
+            this.groupBoxAccountantAlias.Controls.Add(this.tB_MiddleNameAccountant);
             this.groupBoxAccountantAlias.Controls.Add(this.label3);
-            this.groupBoxAccountantAlias.Controls.Add(this.textBoxNameAccountant);
+            this.groupBoxAccountantAlias.Controls.Add(this.tB_NameAccountant);
             this.groupBoxAccountantAlias.Controls.Add(this.label2);
             this.groupBoxAccountantAlias.Location = new System.Drawing.Point(350, 124);
             this.groupBoxAccountantAlias.Name = "groupBoxAccountantAlias";
@@ -217,19 +218,19 @@
             this.label1.TabIndex = 32;
             this.label1.Text = "Фамилия";
             // 
-            // textBoxSurnameAccountant
+            // tB_SurnameAccountant
             // 
-            this.textBoxSurnameAccountant.Location = new System.Drawing.Point(88, 38);
-            this.textBoxSurnameAccountant.Name = "textBoxSurnameAccountant";
-            this.textBoxSurnameAccountant.Size = new System.Drawing.Size(155, 20);
-            this.textBoxSurnameAccountant.TabIndex = 35;
+            this.tB_SurnameAccountant.Location = new System.Drawing.Point(88, 38);
+            this.tB_SurnameAccountant.Name = "tB_SurnameAccountant";
+            this.tB_SurnameAccountant.Size = new System.Drawing.Size(155, 20);
+            this.tB_SurnameAccountant.TabIndex = 35;
             // 
-            // textBoxMiddleNameAccountant
+            // tB_MiddleNameAccountant
             // 
-            this.textBoxMiddleNameAccountant.Location = new System.Drawing.Point(87, 109);
-            this.textBoxMiddleNameAccountant.Name = "textBoxMiddleNameAccountant";
-            this.textBoxMiddleNameAccountant.Size = new System.Drawing.Size(155, 20);
-            this.textBoxMiddleNameAccountant.TabIndex = 37;
+            this.tB_MiddleNameAccountant.Location = new System.Drawing.Point(87, 109);
+            this.tB_MiddleNameAccountant.Name = "tB_MiddleNameAccountant";
+            this.tB_MiddleNameAccountant.Size = new System.Drawing.Size(155, 20);
+            this.tB_MiddleNameAccountant.TabIndex = 37;
             // 
             // label3
             // 
@@ -240,12 +241,12 @@
             this.label3.TabIndex = 33;
             this.label3.Text = "Имя";
             // 
-            // textBoxNameAccountant
+            // tB_NameAccountant
             // 
-            this.textBoxNameAccountant.Location = new System.Drawing.Point(87, 75);
-            this.textBoxNameAccountant.Name = "textBoxNameAccountant";
-            this.textBoxNameAccountant.Size = new System.Drawing.Size(155, 20);
-            this.textBoxNameAccountant.TabIndex = 36;
+            this.tB_NameAccountant.Location = new System.Drawing.Point(87, 75);
+            this.tB_NameAccountant.Name = "tB_NameAccountant";
+            this.tB_NameAccountant.Size = new System.Drawing.Size(155, 20);
+            this.tB_NameAccountant.TabIndex = 36;
             // 
             // label2
             // 
@@ -276,12 +277,12 @@
             this.Controls.Add(this.groupBoxDirectorAlias);
             this.Controls.Add(this.labelOrganisationPhone);
             this.Controls.Add(this.labelAddressCompany);
-            this.Controls.Add(this.labelUTN);
-            this.Controls.Add(this.labelOrganisationName);
-            this.Controls.Add(this.TextBoxOrganisationPhone);
-            this.Controls.Add(this.TextBoxOrganisationAddress);
-            this.Controls.Add(this.TextBoxUTN);
-            this.Controls.Add(this.TextBoxOrganisationName);
+            this.Controls.Add(this.l_UTN);
+            this.Controls.Add(this.l_OrganisationName);
+            this.Controls.Add(this.tB_OrganisationPhone);
+            this.Controls.Add(this.tB_OrganisationAddress);
+            this.Controls.Add(this.tB_UTN);
+            this.Controls.Add(this.tB_CompanuName);
             this.Name = "CreatLegalClientFormView";
             this.Text = "CreatLegalClientFormView";
             this.Load += new System.EventHandler(this.CreatLegalClientFormView_Load);
@@ -298,26 +299,26 @@
 
         private System.Windows.Forms.Label labelOrganisationPhone;
         private System.Windows.Forms.Label labelAddressCompany;
-        private System.Windows.Forms.Label labelUTN;
-        private System.Windows.Forms.Label labelOrganisationName;
-        private System.Windows.Forms.TextBox TextBoxOrganisationPhone;
-        private System.Windows.Forms.TextBox TextBoxOrganisationAddress;
-        private System.Windows.Forms.TextBox TextBoxUTN;
-        private System.Windows.Forms.TextBox TextBoxOrganisationName;
+        private System.Windows.Forms.Label l_UTN;
+        private System.Windows.Forms.Label l_OrganisationName;
+        private System.Windows.Forms.TextBox tB_OrganisationPhone;
+        private System.Windows.Forms.TextBox tB_OrganisationAddress;
+        private System.Windows.Forms.TextBox tB_UTN;
+        private System.Windows.Forms.TextBox tB_CompanuName;
         private System.Windows.Forms.Label labelMiddleName;
         private System.Windows.Forms.Label labelName;
         private System.Windows.Forms.Label labelSurname;
-        private System.Windows.Forms.TextBox textBoxSurnameDirector;
-        private System.Windows.Forms.TextBox textBoxNameDirector;
-        private System.Windows.Forms.TextBox textBoxMiddleNameDirector;
+        private System.Windows.Forms.TextBox tB_SurnameDirector;
+        private System.Windows.Forms.TextBox tB_NameDirector;
+        private System.Windows.Forms.TextBox tB_MiddleNameDirector;
         private System.Windows.Forms.GroupBox groupBoxDirectorAlias;
         private System.Windows.Forms.GroupBox groupBoxAccountantAlias;
         private System.Windows.Forms.Button buttonRegistration;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBoxSurnameAccountant;
-        private System.Windows.Forms.TextBox textBoxMiddleNameAccountant;
+        private System.Windows.Forms.TextBox tB_SurnameAccountant;
+        private System.Windows.Forms.TextBox tB_MiddleNameAccountant;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBoxNameAccountant;
+        private System.Windows.Forms.TextBox tB_NameAccountant;
         private System.Windows.Forms.Label label2;
     }
 }

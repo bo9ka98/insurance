@@ -13,7 +13,7 @@ namespace Presenter
             _kernel = kernel;
             _view = view;
 
-            _view.TransmitDataOfSearchAtCreatLegalClient += TransmitDataOfSearchAtCreatlegalClient;
+            //_view.TransmitDataOfSearchAtCreatLegalClient += TransmitDataOfSearchAtCreatlegalClient;
 
         }
 

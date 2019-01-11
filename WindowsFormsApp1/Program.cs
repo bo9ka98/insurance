@@ -26,6 +26,7 @@ namespace View
             kernel.Bind<ICreatNuturalClienView>().To<CreatNuturalClienFormView>();
             kernel.Bind<ICreatLegalClientView>().To<CreatLegalClientFormView>();
             kernel.Bind<IVisualizeNuturalClientView>().To<VisualizeNuturalClientFormView>();
+            kernel.Bind<IVisualizeLegalClientView>().To<VisualizeLegalClientFormView>();
 
             kernel.Bind<StartLoginPresenter>().ToSelf();
             kernel.Bind<WorkMenuPresenter>().ToSelf();

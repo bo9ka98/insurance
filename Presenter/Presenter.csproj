@@ -43,11 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Presenters\CreatLegalClientPresenter.cs" />
+    <Compile Include="CreatLegalClientPresenter.cs" />
     <Compile Include="Presenters\CreatNuturalClienPresenter.cs" />
     <Compile Include="Delegates.cs" />
     <Compile Include="Presenters\IPresenter.cs" />
-    <Compile Include="Presenters\SearchLegalClientPresenter.cs" />
+    <Compile Include="Presenters\SelectLegalClientPresenter.cs" />
+    <Compile Include="SearchLegalClientPresenter.cs" />
     <Compile Include="Presenters\SearchNuturalClientPresenter.cs" />
     <Compile Include="Presenters\VisualizeNuturalClientPresenter.cs" />
     <Compile Include="Presenters\WorkMenuPresenter.cs" />
@@ -60,6 +61,7 @@
     <Compile Include="Views\IView.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Presenters\StartLoginPresenter.cs" />
+    <Compile Include="Views\IVisualizeLegalClientView.cs" />
     <Compile Include="Views\IVisualizeNuturalClientView.cs" />
     <Compile Include="Views\IWorkMenuView.cs" />
   </ItemGroup>
