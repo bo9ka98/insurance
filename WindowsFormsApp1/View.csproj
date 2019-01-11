@@ -159,6 +159,10 @@
       <Project>{b8695e04-1c98-4c59-9f30-01076d018277}</Project>
       <Name>Presenter</Name>
     </ProjectReference>
+    <ProjectReference Include="..\WindowsFormsApp2\Model.csproj">
+      <Project>{D4773B35-0402-4CFA-855A-852499ADC4E7}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

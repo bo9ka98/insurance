@@ -1,9 +1,5 @@
 ﻿using Ninject;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Model;
 
 namespace Presenter
 {
@@ -18,9 +14,14 @@ namespace Presenter
             _kernel = kernel;
             _view = view;
 
-            //_view.EnterLogin += () => null;
+            _view.ViewDataMan += ViewDataMan;
         }
 
+        private void ViewDataMan(Man man)
+        {
+            _kernel.Get<VisualizeNuturalClientPresenter>().Run(man);
+            //_view.Close();
+        }
         public void Run()
         {
             _view.Show();
@@ -28,9 +29,7 @@ namespace Presenter
 
         public void Run(string surname, string name, string middlename)
         {
-            _view.SurnameNuturalClientStr = surname;
-            _view.NameNuturalClientStr = name;
-            _view.MinnleNameNuturalClientStr = middlename;
+            _view.setSurname_Name_MiddleNameOnForm(surname,name,middlename);
             _view.Show();
         }
     }

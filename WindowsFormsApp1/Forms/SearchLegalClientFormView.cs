@@ -8,11 +8,8 @@ namespace View
     {
         private readonly ApplicationContext _context;
 
-        public string OrganisationNameLegalClientStr => TextBoxOrganisationName.Text;
-        public string UTNLegalClientStr => TextBoxUTN.Text;
-
-        public event Action EnterSearch;
         public event Action EnterReturnWorkMenu;
+        public event Delegates.TransmitDataOfSearchAtCreatLegalClient TransmitDataOfSearchAtCreatLegalClient;
 
         public SearchLegalClientFormView(ApplicationContext context)
         {
@@ -22,7 +19,7 @@ namespace View
 
         private void buttonSearch_Click(object sender, EventArgs e)
         {
-            EnterSearch?.Invoke();
+            TransmitDataOfSearchAtCreatLegalClient?.Invoke(TextBoxOrganisationName.Text, TextBoxUTN.Text);
         }
 
         public new void Show()

@@ -22,6 +22,7 @@ namespace View
             kernel.Bind<ISearchLegalClientView>().To<SearchLegalClientFormView>();
             kernel.Bind<ICreatNuturalClienView>().To<CreatNuturalClienFormView>();
             kernel.Bind<ICreatLegalClientView>().To<CreatLegalClientFormView>();
+            kernel.Bind<IVisualizeNuturalClientView>().To<VisualizeNuturalClientFormView>();
 
             kernel.Bind<StartLoginPresenter>().ToSelf();
             kernel.Bind<WorkMenuPresenter>().ToSelf();
@@ -29,6 +30,7 @@ namespace View
             kernel.Bind<SearchLegalClientPresenter>().ToSelf();
             kernel.Bind<CreatNuturalClienPresenter>().ToSelf();
             kernel.Bind<CreatLegalClientPresenter>().ToSelf();
+            kernel.Bind<VisualizeNuturalClientPresenter>().ToSelf();
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);

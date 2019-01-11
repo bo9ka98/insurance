@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace Model
 {
-    class Alias
+    public class AliasCompanu
     {
-        public string Surname { get; set; }
-        private string Name { get; set; }
-        private string MiddleName { get; set; }
+        public int RegistrationNumber { get; set; }
+        public string CompanuName { get; set; }
     }
 }

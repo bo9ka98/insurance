@@ -9,25 +9,18 @@ namespace View
 
         private readonly ApplicationContext _context;
 
-        public string SurnameNuturalClientStr => textBoxSurname.Text;
-
-        public string NameNuturalClientStr => textBoxName.Text;
-
-        public string MinnleNameNuturalClientStr => textBoxMiddleName.Text;
-
         public SearchNuturalClientFormView(ApplicationContext context)
         {
-
             _context = context;
             InitializeComponent();
         }
 
-        public event Action EnterSearch;
         public event Action EnterReturnWorkMenu;
+        public event Delegates.TransmitDataOfSearchAtCreatNuturalClient TransmitDataOfSearchAtCreatNuturalClient;
 
         private void buttonSearch_Click(object sender, EventArgs e)
         {
-            EnterSearch?.Invoke();
+            TransmitDataOfSearchAtCreatNuturalClient?.Invoke(textBoxSurname.Text, textBoxName.Text, textBoxMiddleName.Text);
         }
 
         public new void Show()

@@ -8,10 +8,9 @@ namespace Presenter
 {
     public interface ICreatNuturalClienView : IView , IHomeButton
     {
-        event Action EnterSearch;
+        event Delegates.TransmitDataOfCreatAtVisualizeNuturalClient ViewDataMan;
 
-        string SurnameNuturalClientStr { get; set; }
-        string NameNuturalClientStr { get; set; }
-        string MinnleNameNuturalClientStr { get; set; }
+        void setSurname_Name_MiddleNameOnForm (string surname, string name, string middlename);
+
     }
 }

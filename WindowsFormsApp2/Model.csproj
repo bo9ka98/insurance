@@ -51,7 +51,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="entity\client\Alias.cs" />
+    <Compile Include="entity\client\AliasCompanu.cs" />
+    <Compile Include="entity\client\AliasMan.cs" />
     <Compile Include="entity\client\Companu.cs" />
     <Compile Include="entity\client\IClient.cs" />
     <Compile Include="entity\client\LegalСlient.cs" />
