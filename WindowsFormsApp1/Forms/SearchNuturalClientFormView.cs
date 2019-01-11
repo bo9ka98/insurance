@@ -11,17 +11,16 @@ namespace View
 
         public SearchNuturalClientFormView(ApplicationContext context)
         {
-
             _context = context;
             InitializeComponent();
         }
 
-        public event Action EnterSearch;
         public event Action EnterReturnWorkMenu;
+        public event Delegates.TransmitDataOfSearchAtCreatNuturalClient TransmitDataOfSearchAtCreatNuturalClient;
 
         private void buttonSearch_Click(object sender, EventArgs e)
         {
-            EnterSearch?.Invoke();
+            TransmitDataOfSearchAtCreatNuturalClient?.Invoke(textBoxSurname.Text, textBoxName.Text, textBoxMiddleName.Text);
         }
 
         public new void Show()

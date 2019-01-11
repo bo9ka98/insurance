@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 using Presenter;
+using Model;
 
 namespace View
 {
@@ -8,8 +9,8 @@ namespace View
     {
         private readonly ApplicationContext _context;
 
-        public event Action EnterSearch;
         public event Action EnterReturnWorkMenu;
+        public event Delegates.TransmitDataOfSearchAtCreatLegalClient TransmitDataOfSearchAtCreatLegalClient;
 
         public SearchLegalClientFormView(ApplicationContext context)
         {
@@ -19,7 +20,8 @@ namespace View
 
         private void buttonSearch_Click(object sender, EventArgs e)
         {
-            EnterSearch?.Invoke();
+            AliasCompanu aliasCompanu = new AliasCompanu(TextBoxOrganisationName.Text, TextBoxUTN.Text);
+            TransmitDataOfSearchAtCreatLegalClient?.Invoke(aliasCompanu);
         }
 
         public new void Show()

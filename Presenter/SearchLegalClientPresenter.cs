@@ -13,6 +13,13 @@ namespace Presenter
             _kernel = kernel;
             _view = view;
 
+            //_view.TransmitDataOfSearchAtCreatLegalClient += TransmitDataOfSearchAtCreatlegalClient;
+
+        }
+
+        private void TransmitDataOfSearchAtCreatlegalClient(string organisationName, string utn)
+        {
+
         }
         public void Run()
         {

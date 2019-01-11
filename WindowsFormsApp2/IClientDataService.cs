@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace Model
 {
-    class Alias
+    public interface IClientDataService <T>
     {
-        public string Surname { get; set; }
-        private string Name { get; set; }
-        private string MiddleName { get; set; }
+        List<T> ListObject { get; set; }
     }
 }

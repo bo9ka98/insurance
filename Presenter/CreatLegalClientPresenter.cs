@@ -4,13 +4,13 @@ using System;
 
 namespace Presenter
 {
-    class CreatLegalClientFormViewPresenter : IPresenter
+    public class CreatLegalClientPresenter : IPresenter
     {
         private readonly IKernel _kernel;
-        private readonly ISearchNuturalClientView _view;
+        private readonly ICreatLegalClientView _view;
 
 
-        public CreatLegalClientFormViewPresenter(IKernel kernel, ISearchNuturalClientView view)
+        public CreatLegalClientPresenter(IKernel kernel, ICreatLegalClientView view)
         {
             _kernel = kernel;
             _view = view;

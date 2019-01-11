@@ -6,13 +6,27 @@ using System.Threading.Tasks;
 
 namespace Model
 {
-    class Companu
+
+    public class Companu
     {
-        private Alias ManagerName { get; set; }
-        private Alias AccountantName { get; set; }
-        private int RegistrationNumber { get; set; }
-        private string CompanuName { get; set; }
-        private string AddressResidence { get; set; }
-        private string PhoneNumber { get; set; }
+        public Companu()
+        {
+
+        }
+
+        public Companu(AliasCompanu companuAlias, AliasMan directorAlias, AliasMan accountantAlias,
+           string addressResidence, string phoneNumber)
+        {
+            CompanuAlias = companuAlias;
+            DirectorAlias = directorAlias;
+            AccountantAlias = accountantAlias;
+            AddressResidence = addressResidence;
+            PhoneNumber = phoneNumber;
+        }
+        public AliasCompanu CompanuAlias { get; set; }
+        public AliasMan DirectorAlias { get; set; }
+        public AliasMan AccountantAlias { get; set; }
+        public string AddressResidence { get; set; }
+        public string PhoneNumber { get; set; }
     }
 }

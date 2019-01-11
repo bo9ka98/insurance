@@ -8,6 +8,6 @@ namespace Presenter
 {
     public interface ISearchNuturalClientView : IView , IHomeButton
     {
-        event Action EnterSearch;
+        event Delegates.TransmitDataOfSearchAtCreatNuturalClient TransmitDataOfSearchAtCreatNuturalClient;
     }
 }

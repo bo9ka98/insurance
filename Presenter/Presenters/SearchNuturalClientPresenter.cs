@@ -12,9 +12,16 @@ namespace Presenter
         {
             _kernel = kernel;
             _view = view;
-           
+
+            _view.TransmitDataOfSearchAtCreatNuturalClient += TransmitDataOfSearchAtCreatNuturalClient;
         }
 
+        private void TransmitDataOfSearchAtCreatNuturalClient(string surname, string name, string middleName)
+        {
+            _kernel.Get<CreatNuturalClienPresenter>().Run(surname, name, middleName);
+            _view.Close();
+
+        }
         public void Run()
         {
             _view.Show();
