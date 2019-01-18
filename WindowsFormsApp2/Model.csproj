@@ -51,7 +51,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="dao\EntitySerializableDao.cs" />
+    <Compile Include="dao\СommonEntitySerializableDao.cs" />
     <Compile Include="dao\NuturalClientDao.cs" />
     <Compile Include="entity\client\AliasCompanu.cs" />
     <Compile Include="entity\client\AliasMan.cs" />

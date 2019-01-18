@@ -8,12 +8,12 @@ using System.Runtime.Serialization.Formatters.Binary;
 
 namespace Model
 {
-    public abstract class EntitySerializableDao <T>
+    public abstract class СommonEntitySerializableDao<T>
     {
         protected string _fileName = typeof(T).Name;
         protected BinaryFormatter _binaryFormatter;
 
-        public EntitySerializableDao(BinaryFormatter binaryFormatter)
+        public СommonEntitySerializableDao(BinaryFormatter binaryFormatter)
         {
             _binaryFormatter = binaryFormatter;
         }
