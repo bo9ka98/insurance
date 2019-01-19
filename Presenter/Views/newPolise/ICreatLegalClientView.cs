@@ -4,7 +4,7 @@ namespace Presenter
 {
     public interface ICreatLegalClientView: IView , IHomeButton
     {
-        event Delegates.TransmitDataOfCreatAtVisualizeLegalClient TransmitDataOfCreatAtVisualizeLegalClient;
+        event Delegates.TransmitDataLegalCatV TransmitDataLegalCatV;
 
         void setAliasCompanu(AliasCompanu aliasCompanu);
     }

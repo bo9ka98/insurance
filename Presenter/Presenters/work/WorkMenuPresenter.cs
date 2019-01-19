@@ -21,11 +21,11 @@ namespace Presenter
         {
             if (clientType == _view.FisClientStr)
             {
-                _kernel.Get<SearchNuturalClientPresenter>().Run();
+                _kernel.Get<SearchIndividClientPresenter>().Run();
                 _view.Close();
             }else if(clientType == _view.JurClientStr)
             {
-                _kernel.Get<SearchLegalClientPresenter>().Run();
+                _kernel.Get<SelectLegalClientPresenter>().Run();
                 _view.Close();
             }
 

@@ -4,8 +4,8 @@ using System.Collections.Generic;
 
 namespace Model
 {
-    public class NuturalClientDataService : IClientDataService<NuturalClient>
+    public class NuturalClientDataService : IClientDataService<IndividClient>
     {
-        public List<NuturalClient> ListObject { get; set; } 
+        public List<IndividClient> ListObject { get; set; } 
     }
 }

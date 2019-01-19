@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace Model
 {
-    public class NuturalClientDao : EntitySerializableDao<NuturalClient>
+    public class IndividClientDao : СommonEntitySerializableDao<IndividClient>
     {
-        public NuturalClientDao(BinaryFormatter binaryFormatter) : base(binaryFormatter) { }
+        public IndividClientDao(BinaryFormatter binaryFormatter) : base(binaryFormatter) { }
 
     }
 }

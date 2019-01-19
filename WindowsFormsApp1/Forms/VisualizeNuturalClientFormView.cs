@@ -18,7 +18,7 @@ namespace View
             InitializeComponent();
         }
 
-        public void SetManData(NuturalClient nuturalClient)
+        public void SetManData(IndividClient nuturalClient)
         {
             l_SurnameStr.Text = nuturalClient.ManAlias.Surname;
             l_NameStr.Text = nuturalClient.ManAlias.Name;

@@ -11,6 +11,6 @@ namespace Presenter
     {
         //event Delegates.TransmitDataOfCreatAtVisualizeNuturalClient ViewData;
         event Action saveData;
-        void SetManData(NuturalClient nuturalClient);
+        void SetManData(IndividClient nuturalClient);
     }
 }
