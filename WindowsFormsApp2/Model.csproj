@@ -51,6 +51,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="dao\LegalClientDao.cs" />
     <Compile Include="dao\СommonEntitySerializableDao.cs" />
     <Compile Include="dao\IndividClientDao.cs" />
     <Compile Include="entity\client\Alias\AliasCompanu.cs" />
@@ -60,8 +62,8 @@
     <Compile Include="entity\client\LegalСlient.cs" />
     <Compile Include="entity\client\Man.cs" />
     <Compile Include="entity\client\IndividClient.cs" />
-    <Compile Include="IClientDataService.cs" />
-    <Compile Include="NuturalClientDataService.cs" />
+    <Compile Include="service\IClientDataService.cs" />
+    <Compile Include="service\ClientDataService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

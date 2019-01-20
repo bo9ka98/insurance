@@ -8,6 +8,8 @@ namespace Model
 {
     public interface IClientDataService <T>
     {
-        List<T> ListObject { get; set; }
+        //private List<T> listObject;
+        List<IndividClient> ReadListIndividClientDao(IndividClient individClient);
+        void AddListIndividClientDao(IndividClient individClient);
     }
 }

@@ -30,14 +30,13 @@ namespace Presenter
 
         private void saveData(IndividClient individClient)
         {
-           
-            _data.ListObject = new List<IndividClient>() { individClient };
-            _kernel.Get<IndividClientDao>().SerializeList(_data.ListObject);
+
+            _data.AddListIndividClientDao(individClient);
         }
 
         private void loadData()
         {
-            List<IndividClient> list = _kernel.Get<IndividClientDao>().DeserializeList();
+
         }
 
         public void Run()

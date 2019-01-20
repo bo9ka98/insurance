@@ -37,7 +37,7 @@ namespace View
             kernel.Bind<VisualizeNuturalClientPresenter>().ToSelf();
             kernel.Bind<SelectLegalClientPresenter>().ToSelf();
 
-            kernel.Bind<IClientDataService<IndividClient>>().To<NuturalClientDataService>().InSingletonScope();
+            kernel.Bind<IClientDataService<IndividClient>>().To<ClientDataService>().InSingletonScope();
             kernel.Bind<IndividClientDao>().ToSelf().InSingletonScope();
 
             Application.EnableVisualStyles();
