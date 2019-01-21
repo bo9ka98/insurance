@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Model;
 
 namespace Presenter
 {
@@ -14,6 +11,7 @@ namespace Presenter
         string JurClientStr { get; }
 
         string SelectionClientTipeStr { get; }
+        void SetUserDataView(User user);
         event Action EnterButtonNext;
         event Action EnterButtonLogOut;
 

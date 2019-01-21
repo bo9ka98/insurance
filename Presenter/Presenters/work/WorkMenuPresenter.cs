@@ -1,4 +1,5 @@
 ﻿using Ninject;
+using Model;
 
 namespace Presenter
 {
@@ -37,6 +38,12 @@ namespace Presenter
         }
         public void Run()
         {
+            _view.Show();
+        }
+
+        public void Run(User user)
+        {
+            _view.SetUserDataView(user);
             _view.Show();
         }
     }

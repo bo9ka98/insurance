@@ -68,7 +68,7 @@
             // 
             this.tB_Pass.Location = new System.Drawing.Point(81, 70);
             this.tB_Pass.Name = "tB_Pass";
-            this.tB_Pass.Size = new System.Drawing.Size(100, 20);
+            this.tB_Pass.Size = new System.Drawing.Size(115, 20);
             this.tB_Pass.TabIndex = 3;
             this.tB_Pass.TextChanged += new System.EventHandler(this.TextBox2_TextChanged);
             // 
@@ -76,7 +76,7 @@
             // 
             this.tB_Login.Location = new System.Drawing.Point(81, 33);
             this.tB_Login.Name = "tB_Login";
-            this.tB_Login.Size = new System.Drawing.Size(100, 20);
+            this.tB_Login.Size = new System.Drawing.Size(115, 20);
             this.tB_Login.TabIndex = 2;
             this.tB_Login.TextChanged += new System.EventHandler(this.TextBox1_TextChanged);
             // 

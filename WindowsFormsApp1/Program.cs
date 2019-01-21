@@ -4,6 +4,7 @@ using System.Runtime.Serialization.Formatters.Binary;
 using Ninject;
 using Presenter;
 using Model;
+using Model.service;
 
 
 namespace View
@@ -39,6 +40,7 @@ namespace View
 
             kernel.Bind<IClientDataService<IndividClient>>().To<ClientDataService>().InSingletonScope();
             kernel.Bind<IndividClientDao>().ToSelf().InSingletonScope();
+            kernel.Bind<UserControlService>().ToSelf().InSingletonScope();
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);

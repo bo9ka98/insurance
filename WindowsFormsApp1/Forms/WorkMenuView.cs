@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 using Presenter;
+using Model;
 
 namespace View
 {
@@ -34,16 +35,25 @@ namespace View
             buttonArrangePayment.Enabled = false;
             buttonClients.Enabled = false;
             buttonPolice.Enabled = false;
-            
-
         }
 
-        public new void Show()
+        public void SetUserDataView(User user)
         {
-            _context.MainForm = this;
-            base.Show();
-        }
+            l_LoginAgent.Text = user.UserControl.Login;
+            l_SurnameInsurance.Text = user.AliasMan.Surname;
+            if (user.UserControl.superuser) {
+                l_TypeInsurance.Text = "Admin";
+                b_CreatPolice.Visible = true;
+                b_CreatCoses.Visible = true;
+                b_СonnectionCases_Palicy.Visible = true;
+                b_employees.Visible = true;
+            }
+            else
+            {
+                l_TypeInsurance.Text = "Agent";
+            }
 
+        }
         private void comboBoxTipeClient_SelectedIndexChanged(object sender, EventArgs e)
         {
             int flag = 0;
@@ -97,6 +107,17 @@ namespace View
         private void button1_Click(object sender, EventArgs e)
         {
             EnterButtonNext?.Invoke();
+        }
+
+        public new void Show()
+        {
+            _context.MainForm = this;
+            base.Show();
+        }
+
+        private void labelNotification_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

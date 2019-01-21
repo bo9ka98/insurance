@@ -62,11 +62,13 @@
     <Compile Include="entity\client\LegalСlient.cs" />
     <Compile Include="entity\client\Man.cs" />
     <Compile Include="entity\client\IndividClient.cs" />
-    <Compile Include="entity\ControlUser.cs" />
+    <Compile Include="entity\user\ControlUser.cs" />
     <Compile Include="service\IClientDataService.cs" />
     <Compile Include="service\ClientDataService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="entity\User.cs" />
+    <Compile Include="entity\user\User.cs" />
+    <Compile Include="service\InsuranceAgentService.cs" />
+    <Compile Include="service\UserControlService.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

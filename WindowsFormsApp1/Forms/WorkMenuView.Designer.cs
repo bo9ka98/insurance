@@ -36,13 +36,19 @@
             this.buttonLogOut = new System.Windows.Forms.Button();
             this.comboBoxSelectionClientTipe = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
+            this.b_СonnectionCases_Palicy = new System.Windows.Forms.Button();
+            this.b_CreatCoses = new System.Windows.Forms.Button();
+            this.b_CreatPolice = new System.Windows.Forms.Button();
+            this.labelNotification = new System.Windows.Forms.Label();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.tbStatus_Policy = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.labelSurname = new System.Windows.Forms.Label();
+            this.l_SurnameInsurance = new System.Windows.Forms.Label();
+            this.labelStatus = new System.Windows.Forms.Label();
+            this.l_TypeInsurance = new System.Windows.Forms.Label();
+            this.b_employees = new System.Windows.Forms.Button();
+            this.l_LoginAgent = new System.Windows.Forms.Label();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -103,7 +109,7 @@
             // 
             // buttonLogOut
             // 
-            this.buttonLogOut.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonLogOut.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonLogOut.Location = new System.Drawing.Point(679, 26);
             this.buttonLogOut.Name = "buttonLogOut";
             this.buttonLogOut.Size = new System.Drawing.Size(96, 27);
@@ -137,44 +143,48 @@
             this.label1.TabIndex = 10;
             this.label1.Text = "client tipe ->";
             // 
-            // button1
+            // b_СonnectionCases_Palicy
             // 
-            this.button1.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(430, 366);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(202, 32);
-            this.button1.TabIndex = 13;
-            this.button1.Text = "Связь случай-полис";
-            this.button1.UseVisualStyleBackColor = true;
+            this.b_СonnectionCases_Palicy.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.b_СonnectionCases_Palicy.Location = new System.Drawing.Point(430, 366);
+            this.b_СonnectionCases_Palicy.Name = "b_СonnectionCases_Palicy";
+            this.b_СonnectionCases_Palicy.Size = new System.Drawing.Size(202, 32);
+            this.b_СonnectionCases_Palicy.TabIndex = 13;
+            this.b_СonnectionCases_Palicy.Text = "Связь случай-полис";
+            this.b_СonnectionCases_Palicy.UseVisualStyleBackColor = true;
+            this.b_СonnectionCases_Palicy.Visible = false;
             // 
-            // button2
+            // b_CreatCoses
             // 
-            this.button2.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button2.Location = new System.Drawing.Point(557, 282);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(176, 57);
-            this.button2.TabIndex = 12;
-            this.button2.Text = "Создать случай";
-            this.button2.UseVisualStyleBackColor = true;
+            this.b_CreatCoses.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.b_CreatCoses.Location = new System.Drawing.Point(557, 282);
+            this.b_CreatCoses.Name = "b_CreatCoses";
+            this.b_CreatCoses.Size = new System.Drawing.Size(176, 57);
+            this.b_CreatCoses.TabIndex = 12;
+            this.b_CreatCoses.Text = "Создать случай";
+            this.b_CreatCoses.UseVisualStyleBackColor = true;
+            this.b_CreatCoses.Visible = false;
             // 
-            // button3
+            // b_CreatPolice
             // 
-            this.button3.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button3.Location = new System.Drawing.Point(456, 219);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(176, 57);
-            this.button3.TabIndex = 11;
-            this.button3.Text = "Создать полис";
-            this.button3.UseVisualStyleBackColor = true;
+            this.b_CreatPolice.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.b_CreatPolice.Location = new System.Drawing.Point(456, 219);
+            this.b_CreatPolice.Name = "b_CreatPolice";
+            this.b_CreatPolice.Size = new System.Drawing.Size(176, 57);
+            this.b_CreatPolice.TabIndex = 11;
+            this.b_CreatPolice.Text = "Создать полис";
+            this.b_CreatPolice.UseVisualStyleBackColor = true;
+            this.b_CreatPolice.Visible = false;
             // 
-            // label2
+            // labelNotification
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(475, 102);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(128, 13);
-            this.label2.TabIndex = 14;
-            this.label2.Text = "Информация об агенте:";
+            this.labelNotification.AutoSize = true;
+            this.labelNotification.Location = new System.Drawing.Point(529, 102);
+            this.labelNotification.Name = "labelNotification";
+            this.labelNotification.Size = new System.Drawing.Size(128, 13);
+            this.labelNotification.TabIndex = 14;
+            this.labelNotification.Text = "Информация об агенте:";
+            this.labelNotification.Click += new System.EventHandler(this.labelNotification_Click);
             // 
             // statusStrip1
             // 
@@ -199,15 +209,76 @@
             this.toolStripStatusLabel2.Size = new System.Drawing.Size(87, 17);
             this.toolStripStatusLabel2.Text = "tbStatus_Policy";
             // 
+            // labelSurname
+            // 
+            this.labelSurname.AutoSize = true;
+            this.labelSurname.Location = new System.Drawing.Point(574, 131);
+            this.labelSurname.Name = "labelSurname";
+            this.labelSurname.Size = new System.Drawing.Size(59, 13);
+            this.labelSurname.TabIndex = 16;
+            this.labelSurname.Text = "Фамилия:";
+            // 
+            // l_SurnameInsurance
+            // 
+            this.l_SurnameInsurance.AutoSize = true;
+            this.l_SurnameInsurance.Location = new System.Drawing.Point(639, 131);
+            this.l_SurnameInsurance.Name = "l_SurnameInsurance";
+            this.l_SurnameInsurance.Size = new System.Drawing.Size(44, 13);
+            this.l_SurnameInsurance.TabIndex = 18;
+            this.l_SurnameInsurance.Text = "Пупкин";
+            // 
+            // labelStatus
+            // 
+            this.labelStatus.AutoSize = true;
+            this.labelStatus.Location = new System.Drawing.Point(589, 164);
+            this.labelStatus.Name = "labelStatus";
+            this.labelStatus.Size = new System.Drawing.Size(44, 13);
+            this.labelStatus.TabIndex = 20;
+            this.labelStatus.Text = "Статус:";
+            // 
+            // l_TypeInsurance
+            // 
+            this.l_TypeInsurance.AutoSize = true;
+            this.l_TypeInsurance.Location = new System.Drawing.Point(639, 164);
+            this.l_TypeInsurance.Name = "l_TypeInsurance";
+            this.l_TypeInsurance.Size = new System.Drawing.Size(40, 13);
+            this.l_TypeInsurance.TabIndex = 21;
+            this.l_TypeInsurance.Text = "Админ";
+            // 
+            // b_employees
+            // 
+            this.b_employees.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.b_employees.Location = new System.Drawing.Point(532, 26);
+            this.b_employees.Name = "b_employees";
+            this.b_employees.Size = new System.Drawing.Size(125, 27);
+            this.b_employees.TabIndex = 22;
+            this.b_employees.Text = "Сотрудники";
+            this.b_employees.UseVisualStyleBackColor = true;
+            this.b_employees.Visible = false;
+            // 
+            // l_LoginAgent
+            // 
+            this.l_LoginAgent.AutoSize = true;
+            this.l_LoginAgent.Location = new System.Drawing.Point(663, 102);
+            this.l_LoginAgent.Name = "l_LoginAgent";
+            this.l_LoginAgent.Size = new System.Drawing.Size(0, 13);
+            this.l_LoginAgent.TabIndex = 23;
+            // 
             // WorkMenuView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 463);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.l_LoginAgent);
+            this.Controls.Add(this.b_employees);
+            this.Controls.Add(this.l_TypeInsurance);
+            this.Controls.Add(this.labelStatus);
+            this.Controls.Add(this.l_SurnameInsurance);
+            this.Controls.Add(this.labelSurname);
+            this.Controls.Add(this.labelNotification);
+            this.Controls.Add(this.b_СonnectionCases_Palicy);
+            this.Controls.Add(this.b_CreatCoses);
+            this.Controls.Add(this.b_CreatPolice);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.comboBoxSelectionClientTipe);
             this.Controls.Add(this.buttonLogOut);
@@ -237,12 +308,18 @@
         private System.Windows.Forms.Button buttonLogOut;
         private System.Windows.Forms.Label label1;
         public System.Windows.Forms.ComboBox comboBoxSelectionClientTipe;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button b_СonnectionCases_Palicy;
+        private System.Windows.Forms.Button b_CreatCoses;
+        private System.Windows.Forms.Button b_CreatPolice;
+        private System.Windows.Forms.Label labelNotification;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel tbStatus_Policy;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel2;
+        private System.Windows.Forms.Label labelSurname;
+        private System.Windows.Forms.Label l_SurnameInsurance;
+        private System.Windows.Forms.Label labelStatus;
+        private System.Windows.Forms.Label l_TypeInsurance;
+        private System.Windows.Forms.Button b_employees;
+        private System.Windows.Forms.Label l_LoginAgent;
     }
 }
