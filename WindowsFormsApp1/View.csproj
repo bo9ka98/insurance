@@ -77,6 +77,18 @@
     <Compile Include="Forms\StartLoginView.Designer.cs">
       <DependentUpon>StartLoginView.cs</DependentUpon>
     </Compile>
+    <Compile Include="NewCategoriPoliceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewCategoriPoliceForm.Designer.cs">
+      <DependentUpon>NewCategoriPoliceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewInsuranceCasesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewInsuranceCasesForm.Designer.cs">
+      <DependentUpon>NewInsuranceCasesForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Forms\WorkMenuView.cs">
@@ -120,6 +132,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\SearchClientsFormView.resx">
       <DependentUpon>SearchClientsFormView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewCategoriPoliceForm.resx">
+      <DependentUpon>NewCategoriPoliceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewInsuranceCasesForm.resx">
+      <DependentUpon>NewInsuranceCasesForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
