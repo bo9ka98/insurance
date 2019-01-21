@@ -98,12 +98,5 @@ namespace View
         {
             EnterButtonNext?.Invoke();
         }
-
-
-    
-
-      
-
-      
     }
 }
