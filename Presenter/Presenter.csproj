@@ -43,26 +43,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CreatLegalClientPresenter.cs" />
-    <Compile Include="Presenters\CreatNuturalClienPresenter.cs" />
+    <Compile Include="bed\CreatLegalClientPresenter.cs" />
+    <Compile Include="Presenters\newPolise\CreatIndividClienPresenter.cs" />
     <Compile Include="Delegates.cs" />
     <Compile Include="Presenters\IPresenter.cs" />
-    <Compile Include="Presenters\SelectLegalClientPresenter.cs" />
-    <Compile Include="SearchLegalClientPresenter.cs" />
-    <Compile Include="Presenters\SearchNuturalClientPresenter.cs" />
-    <Compile Include="Presenters\VisualizeNuturalClientPresenter.cs" />
-    <Compile Include="Presenters\WorkMenuPresenter.cs" />
-    <Compile Include="Views\ICreatLegalClientView.cs" />
-    <Compile Include="Views\ICreatNuturalClienView.cs" />
+    <Compile Include="Presenters\newPolise\SelectLegalClientPresenter.cs" />
+    <Compile Include="bed\SearchLegalClientPresenter.cs" />
+    <Compile Include="Presenters\newPolise\SearchIndividClientPresenter.cs" />
+    <Compile Include="Presenters\newPolise\VisualizeNuturalClientPresenter.cs" />
+    <Compile Include="Presenters\work\WorkMenuPresenter.cs" />
+    <Compile Include="Views\newPolise\ICreatLegalClientView.cs" />
+    <Compile Include="Views\newPolise\ICreatIndividClienView.cs" />
     <Compile Include="Views\IHomeButton.cs" />
-    <Compile Include="Views\ISearchLegalClientView.cs" />
-    <Compile Include="Views\ISearchNuturalClientView.cs" />
+    <Compile Include="Views\newPolise\ISearchLegalClientView.cs" />
+    <Compile Include="Views\newPolise\ISearchIndividClientView.cs" />
     <Compile Include="Views\IStartLoginView.cs" />
     <Compile Include="Views\IView.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Presenters\StartLoginPresenter.cs" />
-    <Compile Include="Views\IVisualizeLegalClientView.cs" />
-    <Compile Include="Views\IVisualizeNuturalClientView.cs" />
+    <Compile Include="Presenters\work\StartLoginPresenter.cs" />
+    <Compile Include="Views\newPolise\IVisualizeLegalClientView.cs" />
+    <Compile Include="Views\newPolise\IVisualizeNuturalClientView.cs" />
     <Compile Include="Views\IWorkMenuView.cs" />
   </ItemGroup>
   <ItemGroup>

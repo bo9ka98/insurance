@@ -13,9 +13,11 @@ namespace Presenter
     {
         private readonly IKernel _kernel;
         private readonly IVisualizeNuturalClientView _view;
-        private readonly IClientDataService<NuturalClient> _data;
-        private NuturalClient client;
-        public VisualizeNuturalClientPresenter(IKernel kernel, IVisualizeNuturalClientView view, IClientDataService<NuturalClient> data)
+        private readonly IClientDataService<IndividClient> _data;
+        private IndividClient client;
+
+        public VisualizeNuturalClientPresenter(IKernel kernel,
+            IVisualizeNuturalClientView view, IClientDataService<IndividClient> data)
         {
             _kernel = kernel;
             _view = view;
@@ -26,16 +28,15 @@ namespace Presenter
             //_view.ViewData += TransmitDataOfCreatAtVisualizeNuturalClient;
         }
 
-        private void saveData(NuturalClient nuturalClient)
+        private void saveData(IndividClient individClient)
         {
-           
-            _data.ListObject = new List<NuturalClient>() {nuturalClient};
-            _kernel.Get<NuturalClientDao>().SerializeList(_data.ListObject);
+
+            _data.AddListIndividClientDao(individClient);
         }
 
         private void loadData()
         {
-            List<NuturalClient> list = _kernel.Get<NuturalClientDao>().DeserializeList();
+
         }
 
         public void Run()
@@ -43,10 +44,10 @@ namespace Presenter
             _view.Show();
         }
 
-        public void Run(NuturalClient nuturalClient)
+        public void Run(IndividClient nuturalClient)
         {
             client = nuturalClient;
-            _view.SetManData(nuturalClient);
+            _view.SetIndividClientData(nuturalClient);
             _view.Show();
         }
     }

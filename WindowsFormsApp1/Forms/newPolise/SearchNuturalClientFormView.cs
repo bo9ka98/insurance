@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Windows.Forms;
 using Presenter;
+using Model;
 
 namespace View
 {
-    public partial class SearchNuturalClientFormView : Form, ISearchNuturalClientView
+    public partial class SearchNuturalClientFormView : Form, ISearchIndividClientView
     {
 
         private readonly ApplicationContext _context;
@@ -16,11 +17,11 @@ namespace View
         }
 
         public event Action EnterReturnWorkMenu;
-        public event Delegates.TransmitDataOfSearchAtCreatNuturalClient TransmitDataOfSearchAtCreatNuturalClient;
+        public event Delegates.TransmitDataIndividSatC ViewDataAliasMan;
 
         private void buttonSearch_Click(object sender, EventArgs e)
         {
-            TransmitDataOfSearchAtCreatNuturalClient?.Invoke(textBoxSurname.Text, textBoxName.Text, textBoxMiddleName.Text);
+            ViewDataAliasMan?.Invoke(new AliasMan(textBoxSurname.Text, textBoxName.Text, textBoxMiddleName.Text));
         }
 
         public new void Show()

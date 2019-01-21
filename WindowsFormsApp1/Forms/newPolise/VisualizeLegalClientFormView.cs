@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using Model;
 using Presenter;
@@ -24,7 +17,7 @@ namespace View
 
         public event Action EnterReturnWorkMenu;
 
-        public void setLegalClient(LegalСlient legalClient)
+        public void SetLegalClientData(LegalСlient legalClient)
         {
             l_OrganisationNameStr.Text = legalClient.CompanuAlias.CompanuName;
             l_UTNStr.Text = legalClient.CompanuAlias.RegistrationNumber;
@@ -46,6 +39,17 @@ namespace View
         private void buttonAccept_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void VisualizeLegalClientFormView_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        public new void Show()
+        {
+            _context.MainForm = this;
+            base.Show();
         }
     }
 }

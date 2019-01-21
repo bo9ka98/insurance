@@ -8,6 +8,6 @@ namespace Presenter
 {
     public interface ISearchLegalClientView : IView, IHomeButton
     {
-        event Delegates.TransmitDataOfSearchAtCreatLegalClient TransmitDataOfSearchAtCreatLegalClient;
+        event Delegates.TransmitDataLegalSatC TransmitDataLegalSatC;
     }
 }

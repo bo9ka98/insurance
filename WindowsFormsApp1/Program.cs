@@ -21,24 +21,25 @@ namespace View
 
             kernel.Bind<IStartLoginView>().To<StartLoginView>();
             kernel.Bind<IWorkMenuView>().To<WorkMenuView>();
-            kernel.Bind<ISearchNuturalClientView>().To<SearchNuturalClientFormView>();
+            kernel.Bind<ISearchIndividClientView>().To<SearchNuturalClientFormView>();
             kernel.Bind<ISearchLegalClientView>().To<SearchLegalClientFormView>();
-            kernel.Bind<ICreatNuturalClienView>().To<CreatNuturalClienFormView>();
+            kernel.Bind<ICreatIndividClienView>().To<CreatNuturalClienFormView>();
             kernel.Bind<ICreatLegalClientView>().To<CreatLegalClientFormView>();
             kernel.Bind<IVisualizeNuturalClientView>().To<VisualizeNuturalClientFormView>();
             kernel.Bind<IVisualizeLegalClientView>().To<VisualizeLegalClientFormView>();
 
             kernel.Bind<StartLoginPresenter>().ToSelf();
             kernel.Bind<WorkMenuPresenter>().ToSelf();
-            kernel.Bind<SearchNuturalClientPresenter>().ToSelf();
+            kernel.Bind<SearchIndividClientPresenter>().ToSelf();
             //kernel.Bind<SearchLegalClientPresenter>().ToSelf();
-            kernel.Bind<CreatNuturalClienPresenter>().ToSelf();
+            kernel.Bind<CreatIndividClienPresenter>().ToSelf();
             //kernel.Bind<CreatLegalClientPresenter>().ToSelf();
             kernel.Bind<VisualizeNuturalClientPresenter>().ToSelf();
             kernel.Bind<SelectLegalClientPresenter>().ToSelf();
 
-            kernel.Bind<IClientDataService<NuturalClient>>().To<NuturalClientDataService>().InSingletonScope();
-            kernel.Bind<NuturalClientDao>().ToSelf().InSingletonScope();
+            kernel.Bind<IClientDataService<IndividClient>>().To<ClientDataService>().InSingletonScope();
+            kernel.Bind<IndividClientDao>().ToSelf().InSingletonScope();
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 

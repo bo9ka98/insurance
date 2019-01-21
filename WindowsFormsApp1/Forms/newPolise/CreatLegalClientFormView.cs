@@ -9,7 +9,7 @@ namespace View
     {
         private readonly ApplicationContext _context;
 
-        public event Delegates.TransmitDataOfCreatAtVisualizeLegalClient TransmitDataOfCreatAtVisualizeLegalClient;
+        public event Delegates.TransmitDataLegalCatV TransmitDataLegalCatV;
         public event Action EnterReturnWorkMenu;
 
         public CreatLegalClientFormView(ApplicationContext context)
@@ -45,7 +45,7 @@ namespace View
                 new AliasMan(tB_SurnameDirector.Text, tB_NameDirector.Text, tB_MiddleNameDirector.Text),
                 new AliasMan(tB_SurnameAccountant.Text, tB_NameAccountant.Text, tB_MiddleNameAccountant.Text),
                 tB_OrganisationAddress.Text, tB_OrganisationPhone.Text);
-            TransmitDataOfCreatAtVisualizeLegalClient?.Invoke(legalСlient);
+            TransmitDataLegalCatV?.Invoke(legalСlient);
         }
 
         public new void Show()

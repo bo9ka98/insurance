@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 namespace Model
 {
     [Serializable]
-    public class NuturalClient : Man, IClient
+    public class IndividClient : Man, IClient
     {
-        public NuturalClient(AliasMan aliasMan, DateTime dateOfBirth, DateTime experienceDrivingCar,
+        public IndividClient(AliasMan aliasMan, DateTime dateOfBirth, DateTime experienceDrivingCar,
            string sex, string address, string phone)
         {
             ManAlias = aliasMan;

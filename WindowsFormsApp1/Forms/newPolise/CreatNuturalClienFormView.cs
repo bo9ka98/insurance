@@ -5,12 +5,12 @@ using Model;
 
 namespace View
 {
-    public partial class CreatNuturalClienFormView : Form, ICreatNuturalClienView
+    public partial class CreatNuturalClienFormView : Form, ICreatIndividClienView
     {
         private readonly ApplicationContext _context;
         
         public event Action EnterReturnWorkMenu;
-        public event Delegates.TransmitDataOfCreatAtVisualizeNuturalClient ViewDataMan;
+        public event Delegates.TransmitDataIndividCatV ViewDataMan;
 
         public CreatNuturalClienFormView(ApplicationContext context)
         {
@@ -18,11 +18,11 @@ namespace View
             InitializeComponent();
         }
 
-        public void setAliasMan(string surname, string name, string middlename)
+        public void setAliasMan(AliasMan aliasMan)
         {
-            tB_Surname.Text = surname;
-            tB_Name.Text = name;
-            tB_MiddleName.Text = middlename;
+            tB_Surname.Text = aliasMan.Surname;
+            tB_Name.Text = aliasMan.Name;
+            tB_MiddleName.Text = aliasMan.MiddleName;
         }
 
         private void textBoxName_TextChanged(object sender, EventArgs e)
@@ -37,9 +37,9 @@ namespace View
 
         private void buttonRegistration_Click(object sender, EventArgs e)
         {
-            NuturalClient nuturalClient = new NuturalClient(new AliasMan(tB_Surname.Text, tB_Name.Text, tB_MiddleName.Text),
+            IndividClient individClient = new IndividClient(new AliasMan(tB_Surname.Text, tB_Name.Text, tB_MiddleName.Text),
                 dTP_DateOfBirth.Value, dTP_DataCar.Value, cB_Sex.Text, tB_Address.Text, tB_PhoneNumber.Text);
-            ViewDataMan?.Invoke(nuturalClient);
+            ViewDataMan?.Invoke(individClient);
         }
 
         public new void Show()

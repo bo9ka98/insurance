@@ -47,16 +47,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Forms\CreatLegalClientFormView.cs">
+    <Compile Include="Forms\newPolise\CreatLegalClientFormView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\CreatLegalClientFormView.Designer.cs">
+    <Compile Include="Forms\newPolise\CreatLegalClientFormView.Designer.cs">
       <DependentUpon>CreatLegalClientFormView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\CreatNuturalClienFormView.cs">
+    <Compile Include="Forms\newPolise\CreatNuturalClienFormView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\CreatNuturalClienFormView.Designer.cs">
+    <Compile Include="Forms\newPolise\CreatNuturalClienFormView.Designer.cs">
       <DependentUpon>CreatNuturalClienFormView.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
@@ -64,6 +64,12 @@
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SearchClientsFormView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SearchClientsFormView.Designer.cs">
+      <DependentUpon>SearchClientsFormView.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\StartLoginView.cs">
       <SubType>Form</SubType>
@@ -79,38 +85,41 @@
     <Compile Include="Forms\WorkMenuView.Designer.cs">
       <DependentUpon>WorkMenuView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\SearchLegalClientFormView.cs">
+    <Compile Include="Forms\newPolise\SearchLegalClientFormView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\SearchLegalClientFormView.Designer.cs">
+    <Compile Include="Forms\newPolise\SearchLegalClientFormView.Designer.cs">
       <DependentUpon>SearchLegalClientFormView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\SearchNuturalClientFormView.cs">
+    <Compile Include="Forms\newPolise\SearchNuturalClientFormView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\SearchNuturalClientFormView.Designer.cs">
+    <Compile Include="Forms\newPolise\SearchNuturalClientFormView.Designer.cs">
       <DependentUpon>SearchNuturalClientFormView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\VisualizeLegalClientFormView.cs">
+    <Compile Include="Forms\newPolise\VisualizeLegalClientFormView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\VisualizeLegalClientFormView.Designer.cs">
+    <Compile Include="Forms\newPolise\VisualizeLegalClientFormView.Designer.cs">
       <DependentUpon>VisualizeLegalClientFormView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\VisualizeNuturalClientFormView.cs">
+    <Compile Include="Forms\newPolise\VisualizeNuturalClientFormView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\VisualizeNuturalClientFormView.Designer.cs">
+    <Compile Include="Forms\newPolise\VisualizeNuturalClientFormView.Designer.cs">
       <DependentUpon>VisualizeNuturalClientFormView.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Forms\CreatLegalClientFormView.resx">
+    <EmbeddedResource Include="Forms\newPolise\CreatLegalClientFormView.resx">
       <DependentUpon>CreatLegalClientFormView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\CreatNuturalClienFormView.resx">
+    <EmbeddedResource Include="Forms\newPolise\CreatNuturalClienFormView.resx">
       <DependentUpon>CreatNuturalClienFormView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SearchClientsFormView.resx">
+      <DependentUpon>SearchClientsFormView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -128,16 +137,16 @@
     <EmbeddedResource Include="Forms\WorkMenuView.resx">
       <DependentUpon>WorkMenuView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\SearchLegalClientFormView.resx">
+    <EmbeddedResource Include="Forms\newPolise\SearchLegalClientFormView.resx">
       <DependentUpon>SearchLegalClientFormView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\SearchNuturalClientFormView.resx">
+    <EmbeddedResource Include="Forms\newPolise\SearchNuturalClientFormView.resx">
       <DependentUpon>SearchNuturalClientFormView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\VisualizeLegalClientFormView.resx">
+    <EmbeddedResource Include="Forms\newPolise\VisualizeLegalClientFormView.resx">
       <DependentUpon>VisualizeLegalClientFormView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\VisualizeNuturalClientFormView.resx">
+    <EmbeddedResource Include="Forms\newPolise\VisualizeNuturalClientFormView.resx">
       <DependentUpon>VisualizeNuturalClientFormView.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
