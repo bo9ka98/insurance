@@ -8,10 +8,7 @@ namespace Presenter
 {
     public interface IStartLoginView : IView
     {
-        string LoginString { get; }
-        string PassString { get; }
-        bool SuperuserFlag { get; }
-        event Action EnterLogin;
+        event Delegates.VerificationUser VerificationUser;
         void ShowError(string massage);
     }
 }

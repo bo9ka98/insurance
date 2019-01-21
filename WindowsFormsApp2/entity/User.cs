@@ -4,19 +4,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Model.entity
+namespace Model
 {
-    class User
+    public class User
     {
-        public string Login{ get; set; }
-        public string Password { get; set; }
-        public readonly bool superuser;
-
-        public User (string loginUser, string passwordUser, bool superuserFlag)
+        public AliasMan AliasMan { get; set; }
+        public ControlUser UserControl { get; set; }
+        
+        public User (AliasMan youAliasMan, ControlUser youUserControl)
         {
-            Login = loginUser;
-            Password = passwordUser;
-            superuser = superuserFlag;
+            AliasMan = youAliasMan;
+            UserControl = youUserControl;
         }
     }
 }
