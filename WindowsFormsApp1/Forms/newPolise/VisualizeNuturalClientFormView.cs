@@ -18,7 +18,7 @@ namespace View
             InitializeComponent();
         }
 
-        public void SetManData(IndividClient nuturalClient)
+        public void SetIndividClientData(IndividClient nuturalClient)
         {
             l_SurnameStr.Text = nuturalClient.ManAlias.Surname;
             l_NameStr.Text = nuturalClient.ManAlias.Name;
@@ -66,5 +66,6 @@ namespace View
         {
             EnterReturnWorkMenu?.Invoke();
         }
+
     }
 }

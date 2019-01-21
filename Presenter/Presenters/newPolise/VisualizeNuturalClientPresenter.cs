@@ -47,7 +47,7 @@ namespace Presenter
         public void Run(IndividClient nuturalClient)
         {
             client = nuturalClient;
-            _view.SetManData(nuturalClient);
+            _view.SetIndividClientData(nuturalClient);
             _view.Show();
         }
     }

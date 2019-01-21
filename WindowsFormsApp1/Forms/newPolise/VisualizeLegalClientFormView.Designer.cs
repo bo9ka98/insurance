@@ -309,6 +309,7 @@
             this.Controls.Add(this.labelOrganisationName);
             this.Name = "VisualizeLegalClientFormView";
             this.Text = "VisualizeLegalClientFormView";
+            this.Load += new System.EventHandler(this.VisualizeLegalClientFormView_Load);
             this.groupBoxAccountantAlias.ResumeLayout(false);
             this.groupBoxAccountantAlias.PerformLayout();
             this.groupBoxDirectorAlias.ResumeLayout(false);
