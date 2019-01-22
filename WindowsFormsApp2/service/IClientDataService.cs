@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Model.entity;
 
-namespace Model
+namespace Model.service
 {
     public interface IClientDataService <T>
     {

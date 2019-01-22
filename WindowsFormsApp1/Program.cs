@@ -2,9 +2,9 @@
 using System.Windows.Forms;
 using Ninject;
 using Presenter;
-using Model;
 using Model.service;
 using Model.entity;
+using Model.dao;
 
 
 namespace View

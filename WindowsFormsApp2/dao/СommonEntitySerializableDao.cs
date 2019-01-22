@@ -6,7 +6,7 @@ using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 //using Ninject;
 
-namespace Model
+namespace Model.dao
 {
     public abstract class СommonEntitySerializableDao<T>
     {
