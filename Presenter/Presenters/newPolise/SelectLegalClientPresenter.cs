@@ -1,6 +1,6 @@
 ﻿using System;
 using Ninject;
-using Model;
+using Model.entity;
 
 namespace Presenter
 {

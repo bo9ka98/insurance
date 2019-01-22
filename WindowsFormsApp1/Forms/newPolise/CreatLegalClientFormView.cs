@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 using Presenter;
-using Model;
+using Model.entity;
 
 namespace View
 {

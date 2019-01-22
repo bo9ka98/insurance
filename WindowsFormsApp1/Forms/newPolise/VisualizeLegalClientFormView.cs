@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
-using Model;
+using Model.entity;
 using Presenter;
 
 namespace View

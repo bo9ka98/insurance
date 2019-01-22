@@ -71,30 +71,30 @@
     <Compile Include="Forms\SearchClientsFormView.Designer.cs">
       <DependentUpon>SearchClientsFormView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\StartLoginView.cs">
+    <Compile Include="Forms\system\StartLoginView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\StartLoginView.Designer.cs">
+    <Compile Include="Forms\system\StartLoginView.Designer.cs">
       <DependentUpon>StartLoginView.cs</DependentUpon>
     </Compile>
-    <Compile Include="NewCategoriPoliceForm.cs">
+    <Compile Include="Forms\system\NewPoliceCategoriForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="NewCategoriPoliceForm.Designer.cs">
-      <DependentUpon>NewCategoriPoliceForm.cs</DependentUpon>
+    <Compile Include="Forms\system\NewPoliceCategoriForm.Designer.cs">
+      <DependentUpon>NewPoliceCategoriForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="NewInsuranceCasesForm.cs">
+    <Compile Include="Forms\system\NewInsuranceCasesForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="NewInsuranceCasesForm.Designer.cs">
+    <Compile Include="Forms\system\NewInsuranceCasesForm.Designer.cs">
       <DependentUpon>NewInsuranceCasesForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Forms\WorkMenuView.cs">
+    <Compile Include="Forms\system\WorkMenuView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\WorkMenuView.Designer.cs">
+    <Compile Include="Forms\system\WorkMenuView.Designer.cs">
       <DependentUpon>WorkMenuView.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\newPolise\SearchLegalClientFormView.cs">
@@ -133,10 +133,10 @@
     <EmbeddedResource Include="Forms\SearchClientsFormView.resx">
       <DependentUpon>SearchClientsFormView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="NewCategoriPoliceForm.resx">
-      <DependentUpon>NewCategoriPoliceForm.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\system\NewPoliceCategoriForm.resx">
+      <DependentUpon>NewPoliceCategoriForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="NewInsuranceCasesForm.resx">
+    <EmbeddedResource Include="Forms\system\NewInsuranceCasesForm.resx">
       <DependentUpon>NewInsuranceCasesForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -149,10 +149,10 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Forms\StartLoginView.resx">
+    <EmbeddedResource Include="Forms\system\StartLoginView.resx">
       <DependentUpon>StartLoginView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\WorkMenuView.resx">
+    <EmbeddedResource Include="Forms\system\WorkMenuView.resx">
       <DependentUpon>WorkMenuView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\newPolise\SearchLegalClientFormView.resx">

@@ -1,6 +1,6 @@
 ﻿namespace View
 {
-    partial class NewCategoriPoliceForm
+    partial class NewPoliceCategoriForm
     {
         /// <summary>
         /// Required designer variable.
@@ -91,6 +91,7 @@
             this.b_Registration.TabIndex = 16;
             this.b_Registration.Text = "Registration";
             this.b_Registration.UseVisualStyleBackColor = true;
+            this.b_Registration.Click += new System.EventHandler(this.b_Registration_Click);
             // 
             // NewCategoriPoliceForm
             // 

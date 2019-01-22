@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Windows.Forms;
-using System.Runtime.Serialization.Formatters.Binary;
 using Ninject;
 using Presenter;
 using Model;
 using Model.service;
+using Model.entity;
 
 
 namespace View

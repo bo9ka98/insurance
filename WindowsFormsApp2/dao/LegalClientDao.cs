@@ -1,5 +1,6 @@
 ﻿
-
+using System;
+using Model.entity;
 using System.Runtime.Serialization.Formatters.Binary;
 
 

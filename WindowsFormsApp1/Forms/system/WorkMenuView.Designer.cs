@@ -35,7 +35,7 @@
             this.buttonPolice = new System.Windows.Forms.Button();
             this.buttonLogOut = new System.Windows.Forms.Button();
             this.comboBoxSelectionClientTipe = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.l_ChooseClientTipe = new System.Windows.Forms.Label();
             this.b_СonnectionCases_Palicy = new System.Windows.Forms.Button();
             this.b_CreatCoses = new System.Windows.Forms.Button();
             this.b_CreatPolice = new System.Windows.Forms.Button();
@@ -133,15 +133,17 @@
             this.comboBoxSelectionClientTipe.TabIndex = 9;
             this.comboBoxSelectionClientTipe.SelectedIndexChanged += new System.EventHandler(this.comboBoxTipeClient_SelectedIndexChanged);
             // 
-            // label1
+            // l_ChooseClientTipe
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(271, 43);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(94, 20);
-            this.label1.TabIndex = 10;
-            this.label1.Text = "client tipe ->";
+            this.l_ChooseClientTipe.AutoSize = true;
+            this.l_ChooseClientTipe.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.l_ChooseClientTipe.ForeColor = System.Drawing.Color.Red;
+            this.l_ChooseClientTipe.Location = new System.Drawing.Point(216, 43);
+            this.l_ChooseClientTipe.Name = "l_ChooseClientTipe";
+            this.l_ChooseClientTipe.Size = new System.Drawing.Size(150, 20);
+            this.l_ChooseClientTipe.TabIndex = 10;
+            this.l_ChooseClientTipe.Text = "choose client tipe ->";
+            this.l_ChooseClientTipe.Click += new System.EventHandler(this.l_ChooseClientTipe_Click);
             // 
             // b_СonnectionCases_Palicy
             // 
@@ -279,7 +281,7 @@
             this.Controls.Add(this.b_СonnectionCases_Palicy);
             this.Controls.Add(this.b_CreatCoses);
             this.Controls.Add(this.b_CreatPolice);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.l_ChooseClientTipe);
             this.Controls.Add(this.comboBoxSelectionClientTipe);
             this.Controls.Add(this.buttonLogOut);
             this.Controls.Add(this.buttonPolice);
@@ -306,7 +308,7 @@
         private System.Windows.Forms.Button buttonArrangePayment;
         private System.Windows.Forms.Button buttonPolice;
         private System.Windows.Forms.Button buttonLogOut;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label l_ChooseClientTipe;
         public System.Windows.Forms.ComboBox comboBoxSelectionClientTipe;
         private System.Windows.Forms.Button b_СonnectionCases_Palicy;
         private System.Windows.Forms.Button b_CreatCoses;

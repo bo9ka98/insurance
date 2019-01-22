@@ -57,6 +57,7 @@ namespace View
         private void comboBoxTipeClient_SelectedIndexChanged(object sender, EventArgs e)
         {
             int flag = 0;
+            l_ChooseClientTipe.Visible = false;
             if (flag == 0)
             {
                 buttonClients.Enabled = true;
@@ -109,15 +110,20 @@ namespace View
             EnterButtonNext?.Invoke();
         }
 
+        private void labelNotification_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void l_ChooseClientTipe_Click(object sender, EventArgs e)
+        {
+
+        }
+
         public new void Show()
         {
             _context.MainForm = this;
             base.Show();
-        }
-
-        private void labelNotification_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
