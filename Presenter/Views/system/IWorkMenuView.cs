@@ -1,5 +1,5 @@
 ﻿using System;
-using Model;
+using Model.entity;
 
 namespace Presenter
 {
@@ -12,7 +12,8 @@ namespace Presenter
 
         string SelectionClientTipeStr { get; }
         void SetUserDataView(User user);
-        event Action EnterButtonNext;
+        event Action EnterIssuePolice;
+        event Action EnterNewPoliceCategori;
         event Action EnterButtonLogOut;
 
 

@@ -6,7 +6,7 @@ using Model.entity;
 
 namespace View
 {
-    public partial class NewPoliceCategoriForm : Form , INewPoliceCategoriPresenterView
+    public partial class NewPoliceCategoriForm : Form , INewPoliceCategoriView
     {
         ApplicationContext _context;
 

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 using Presenter;
-using Model;
+using Model.entity;
 
 namespace View
 {
@@ -17,7 +17,8 @@ namespace View
             InitializeComponent();
         }
 
-        public event Action EnterButtonNext;
+        public event Action EnterIssuePolice;
+        public event Action EnterNewPoliceCategori;
         public event Action EnterButtonLogOut;
 
         public string ClientStr => "both types";
@@ -88,26 +89,26 @@ namespace View
 
         private void buttonStateIncident_Click(object sender, EventArgs e)
         {
-            EnterButtonNext?.Invoke();
+            EnterButtonLogOut?.Invoke();
         }
 
         private void buttonArrangePayment_Click(object sender, EventArgs e)
         {
-            EnterButtonNext?.Invoke();
+            EnterButtonLogOut?.Invoke();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            EnterButtonNext?.Invoke();
+            EnterButtonLogOut?.Invoke();
         }
         private void button5_Click(object sender, EventArgs e)
         {
-            EnterButtonNext?.Invoke();
+            EnterButtonLogOut?.Invoke();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            EnterButtonNext?.Invoke();
+            EnterIssuePolice?.Invoke();
         }
 
         private void labelNotification_Click(object sender, EventArgs e)
@@ -124,6 +125,11 @@ namespace View
         {
             _context.MainForm = this;
             base.Show();
+        }
+
+        private void b_CreatPolice_Click(object sender, EventArgs e)
+        {
+            EnterNewPoliceCategori?.Invoke();
         }
     }
 }

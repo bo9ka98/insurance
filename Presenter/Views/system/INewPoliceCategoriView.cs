@@ -3,7 +3,7 @@ using Model.entity;
 
 namespace Presenter
 {
-    public interface INewPoliceCategoriPresenterView : IView
+    public interface INewPoliceCategoriView : IView
     {
         event Delegates.RegistrPoliceCategori RegistrPoliceCategori;
     }

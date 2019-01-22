@@ -1,7 +1,6 @@
-﻿using System;
-using Model.entity;
+﻿
 
-namespace Model
+namespace Model.entity
 {
     public class User
     {

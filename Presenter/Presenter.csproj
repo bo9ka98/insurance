@@ -53,7 +53,7 @@
     <Compile Include="Presenters\newPolise\VisualizeNuturalClientPresenter.cs" />
     <Compile Include="Presenters\NewPoliceCategoriPresenter.cs" />
     <Compile Include="Presenters\work\WorkMenuPresenter.cs" />
-    <Compile Include="Views\system\INewPoliceCategoriPresenterView.cs" />
+    <Compile Include="Views\system\INewPoliceCategoriView.cs" />
     <Compile Include="Views\newPolise\ICreatLegalClientView.cs" />
     <Compile Include="Views\newPolise\ICreatIndividClienView.cs" />
     <Compile Include="Views\IHomeButton.cs" />

@@ -177,6 +177,7 @@
             this.b_CreatPolice.Text = "Создать полис";
             this.b_CreatPolice.UseVisualStyleBackColor = true;
             this.b_CreatPolice.Visible = false;
+            this.b_CreatPolice.Click += new System.EventHandler(this.b_CreatPolice_Click);
             // 
             // labelNotification
             // 

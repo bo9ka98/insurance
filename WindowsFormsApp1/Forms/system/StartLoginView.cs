@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 using Presenter;
-using Model;
+using Model.entity;
 
 namespace View
 {
@@ -37,7 +37,16 @@ namespace View
 
         public void ShowError(string massage)
         {
-            throw new NotImplementedException();
+            if (massage != null)
+            {
+                l_Err.Text = massage;
+            }
+            else
+            {
+                l_Err.Text = "Пришел из неожиданного места";
+            }
+
+            l_Err.Visible = true;
         }
 
         private void TextBox1_TextChanged(object sender, EventArgs e)

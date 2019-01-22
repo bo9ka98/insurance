@@ -1,15 +1,16 @@
 ﻿using Ninject;
 using Model.entity;
+using Model.service;
 
 namespace Presenter
 {
-    class NewPoliceCategoriPresenter : IPresenter
+    public class NewPoliceCategoriPresenter : IPresenter
     {
         private readonly IKernel _kernel;
-        private readonly INewPoliceCategoriPresenterView _view;
+        private readonly INewPoliceCategoriView _view;
 
 
-        public NewPoliceCategoriPresenter(IKernel kernel, INewPoliceCategoriPresenterView view)
+        public NewPoliceCategoriPresenter(IKernel kernel, INewPoliceCategoriView view)
         {
             _kernel = kernel;
             _view = view;
@@ -19,8 +20,8 @@ namespace Presenter
 
         private void RegistrPoliceCategori(PoliceCategori policeCategori)
         {
-            //_kernel.Get<>
-            _kernel.Get<WorkMenuPresenter>().Run();
+            User user = _kernel.Get<UserControlService>().GetAuthoriaedUser();
+            _kernel.Get<WorkMenuPresenter>().Run(user);
             _view.Close();
 
         }

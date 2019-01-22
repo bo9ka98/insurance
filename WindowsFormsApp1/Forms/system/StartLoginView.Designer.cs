@@ -36,6 +36,7 @@
             this.labelLogin = new System.Windows.Forms.Label();
             this.labelHello = new System.Windows.Forms.Label();
             this.buttonEnter = new System.Windows.Forms.Button();
+            this.l_Err = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -118,11 +119,23 @@
             this.buttonEnter.UseVisualStyleBackColor = true;
             this.buttonEnter.Click += new System.EventHandler(this.buttonEnter_Click);
             // 
+            // l_Err
+            // 
+            this.l_Err.AutoSize = true;
+            this.l_Err.ForeColor = System.Drawing.Color.Red;
+            this.l_Err.Location = new System.Drawing.Point(323, 273);
+            this.l_Err.Name = "l_Err";
+            this.l_Err.Size = new System.Drawing.Size(101, 13);
+            this.l_Err.TabIndex = 3;
+            this.l_Err.Text = "Место для ошибки";
+            this.l_Err.Visible = false;
+            // 
             // StartLoginView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.l_Err);
             this.Controls.Add(this.buttonEnter);
             this.Controls.Add(this.labelHello);
             this.Controls.Add(this.groupBox1);
@@ -145,5 +158,6 @@
         private System.Windows.Forms.CheckBox cB_Superuser;
         private System.Windows.Forms.TextBox tB_Pass;
         private System.Windows.Forms.TextBox tB_Login;
+        private System.Windows.Forms.Label l_Err;
     }
 }
