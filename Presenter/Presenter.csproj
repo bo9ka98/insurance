@@ -43,16 +43,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="bed\CreatLegalClientPresenter.cs" />
     <Compile Include="Presenters\newPolise\CreatIndividClienPresenter.cs" />
     <Compile Include="Delegates.cs" />
-    <Compile Include="IPresenter.cs" />
+    <Compile Include="Presenters\IPresenter.cs" />
     <Compile Include="Presenters\newPolise\SelectLegalClientPresenter.cs" />
-    <Compile Include="bed\SearchLegalClientPresenter.cs" />
     <Compile Include="Presenters\newPolise\SearchIndividClientPresenter.cs" />
     <Compile Include="Presenters\newPolise\VisualizeNuturalClientPresenter.cs" />
-    <Compile Include="Presenters\NewPoliceCategoriPresenter.cs" />
+    <Compile Include="Presenters\system\NewInsuranceCasesPresenter.cs" />
+    <Compile Include="Presenters\system\NewPoliceCategoriPresenter.cs" />
     <Compile Include="Presenters\work\WorkMenuPresenter.cs" />
+    <Compile Include="Views\system\INewInsuranceCasesView.cs" />
     <Compile Include="Views\system\INewPoliceCategoriView.cs" />
     <Compile Include="Views\newPolise\ICreatLegalClientView.cs" />
     <Compile Include="Views\newPolise\ICreatIndividClienView.cs" />

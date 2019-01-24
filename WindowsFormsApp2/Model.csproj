@@ -61,6 +61,7 @@
     <Compile Include="entity\client\LegalСlient.cs" />
     <Compile Include="entity\client\Man.cs" />
     <Compile Include="entity\client\IndividClient.cs" />
+    <Compile Include="entity\policy\Alias\InsuranceCases.cs" />
     <Compile Include="entity\policy\Alias\PoliceCategori.cs" />
     <Compile Include="entity\user\ControlUser.cs" />
     <Compile Include="service\IClientDataService.cs" />
@@ -80,6 +81,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="Properties\DataSources\Model.entity.PoliceCategori.datasource">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

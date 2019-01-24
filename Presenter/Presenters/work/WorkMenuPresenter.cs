@@ -14,10 +14,12 @@ namespace Presenter
             _kernel = kernel;
             _view = view;
 
-            _view.EnterButtonLogOut += () => EnterButtonLogOut();
+            
             _view.EnterIssuePolice += () => EnterIssuePolice(_view.SelectionClientTipeStr);
-
+ 
             _view.EnterNewPoliceCategori += () => EnterNewPoliceCategori();
+            _view.EnterNewInsuranceCases += () => EnterNewInsuranceCases();
+            _view.EnterButtonLogOut += () => EnterButtonLogOut();
         }
 
         public void EnterIssuePolice(string clientType)
@@ -37,7 +39,15 @@ namespace Presenter
         public void EnterNewPoliceCategori()
         {
             _kernel.Get<NewPoliceCategoriPresenter>().Run();
+            _view.Close();
         }
+
+        public void EnterNewInsuranceCases()
+        {
+            _kernel.Get<NewPoliceCategoriPresenter>().Run();
+            _view.Close();
+        }
+
         public void EnterButtonLogOut()
         {
             _kernel.Get<StartLoginPresenter>().Run();

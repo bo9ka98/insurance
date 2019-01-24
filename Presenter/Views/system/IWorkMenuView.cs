@@ -12,8 +12,12 @@ namespace Presenter
 
         string SelectionClientTipeStr { get; }
         void SetUserDataView(User user);
+
         event Action EnterIssuePolice;
+
         event Action EnterNewPoliceCategori;
+        event Action EnterNewInsuranceCases;
+
         event Action EnterButtonLogOut;
 
 

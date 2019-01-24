@@ -28,22 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.paymPercentTextBox = new System.Windows.Forms.TextBox();
+            this.tB_PercentPayout = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.insCaseTextBox = new System.Windows.Forms.TextBox();
+            this.tB_insCases = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.b_Registration = new System.Windows.Forms.Button();
             this.l_razmern = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // paymPercentTextBox
+            // tB_PercentPayout
             // 
-            this.paymPercentTextBox.Location = new System.Drawing.Point(205, 133);
-            this.paymPercentTextBox.Margin = new System.Windows.Forms.Padding(2);
-            this.paymPercentTextBox.Name = "paymPercentTextBox";
-            this.paymPercentTextBox.Size = new System.Drawing.Size(236, 20);
-            this.paymPercentTextBox.TabIndex = 12;
+            this.tB_PercentPayout.Location = new System.Drawing.Point(205, 133);
+            this.tB_PercentPayout.Margin = new System.Windows.Forms.Padding(2);
+            this.tB_PercentPayout.Name = "tB_PercentPayout";
+            this.tB_PercentPayout.Size = new System.Drawing.Size(236, 20);
+            this.tB_PercentPayout.TabIndex = 12;
             // 
             // label2
             // 
@@ -55,13 +55,13 @@
             this.label2.TabIndex = 11;
             this.label2.Text = "Процент выплаты";
             // 
-            // insCaseTextBox
+            // tB_insCases
             // 
-            this.insCaseTextBox.Location = new System.Drawing.Point(205, 92);
-            this.insCaseTextBox.Margin = new System.Windows.Forms.Padding(2);
-            this.insCaseTextBox.Name = "insCaseTextBox";
-            this.insCaseTextBox.Size = new System.Drawing.Size(264, 20);
-            this.insCaseTextBox.TabIndex = 9;
+            this.tB_insCases.Location = new System.Drawing.Point(205, 92);
+            this.tB_insCases.Margin = new System.Windows.Forms.Padding(2);
+            this.tB_insCases.Name = "tB_insCases";
+            this.tB_insCases.Size = new System.Drawing.Size(264, 20);
+            this.tB_insCases.TabIndex = 9;
             // 
             // label3
             // 
@@ -89,6 +89,7 @@
             this.b_Registration.TabIndex = 17;
             this.b_Registration.Text = "Registration";
             this.b_Registration.UseVisualStyleBackColor = true;
+            this.b_Registration.Click += new System.EventHandler(this.b_Registration_Click);
             // 
             // l_razmern
             // 
@@ -109,9 +110,9 @@
             this.Controls.Add(this.b_Registration);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.paymPercentTextBox);
+            this.Controls.Add(this.tB_PercentPayout);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.insCaseTextBox);
+            this.Controls.Add(this.tB_insCases);
             this.Name = "NewInsuranceCasesForm";
             this.Text = "NewInsuranceCasesForm";
             this.ResumeLayout(false);
@@ -121,9 +122,9 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox paymPercentTextBox;
+        private System.Windows.Forms.TextBox tB_PercentPayout;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox insCaseTextBox;
+        private System.Windows.Forms.TextBox tB_insCases;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button b_Registration;

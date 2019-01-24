@@ -8,7 +8,7 @@ namespace View
 {
     public partial class NewPoliceCategoriForm : Form , INewPoliceCategoriView
     {
-        ApplicationContext _context;
+        private readonly ApplicationContext _context;
 
         public event Delegates.RegistrPoliceCategori RegistrPoliceCategori;
 

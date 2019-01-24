@@ -2,6 +2,8 @@
 using System.Windows.Forms;
 using Ninject;
 using Presenter;
+using Presenter.Presenters;
+using Presenter.Views;
 using Model.service;
 using Model.entity;
 using Model.dao;
@@ -33,6 +35,7 @@ namespace View
 
             // new police
             kernel.Bind<INewPoliceCategoriView>().To<NewPoliceCategoriForm>();
+            kernel.Bind<INewInsuranceCasesView>().To<NewInsuranceCasesForm>();
 
             kernel.Bind<StartLoginPresenter>().ToSelf();
             kernel.Bind<WorkMenuPresenter>().ToSelf();
@@ -44,6 +47,7 @@ namespace View
 
             //new police
             kernel.Bind<NewPoliceCategoriPresenter>().ToSelf();
+            kernel.Bind<NewInsuranceCasesPresenter>().ToSelf();
 
             //service
             kernel.Bind<IClientDataService<IndividClient>>().To<ClientDataService>().InSingletonScope();

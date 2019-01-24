@@ -7,6 +7,7 @@ namespace Presenter
     {
         public delegate void VerificationUser(ControlUser controlUser);
         public delegate void RegistrPoliceCategori(PoliceCategori policeCategori);
+        public delegate void RegistrInsuranceCases(InsuranceCases insuranceCases);
 
         public delegate void TransmitDataIndividSatC(AliasMan aliasMan);
         public delegate void TransmitDataLegalSatC(AliasCompanu aliasCompanu);

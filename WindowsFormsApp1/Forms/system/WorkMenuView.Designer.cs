@@ -166,6 +166,7 @@
             this.b_CreatCoses.Text = "Создать случай";
             this.b_CreatCoses.UseVisualStyleBackColor = true;
             this.b_CreatCoses.Visible = false;
+            this.b_CreatCoses.Click += new System.EventHandler(this.b_CreatCoses_Click);
             // 
             // b_CreatPolice
             // 
@@ -258,6 +259,7 @@
             this.b_employees.Text = "Сотрудники";
             this.b_employees.UseVisualStyleBackColor = true;
             this.b_employees.Visible = false;
+            this.b_employees.Click += new System.EventHandler(this.b_employees_Click);
             // 
             // l_LoginAgent
             // 

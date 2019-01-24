@@ -18,7 +18,10 @@ namespace View
         }
 
         public event Action EnterIssuePolice;
+
         public event Action EnterNewPoliceCategori;
+        public event Action EnterNewInsuranceCases;
+
         public event Action EnterButtonLogOut;
 
         public string ClientStr => "both types";
@@ -130,6 +133,16 @@ namespace View
         private void b_CreatPolice_Click(object sender, EventArgs e)
         {
             EnterNewPoliceCategori?.Invoke();
+        }
+
+        private void b_employees_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void b_CreatCoses_Click(object sender, EventArgs e)
+        {
+            EnterNewInsuranceCases?.Invoke();
         }
     }
 }
