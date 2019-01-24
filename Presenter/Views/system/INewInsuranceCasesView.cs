@@ -9,5 +9,7 @@ namespace Presenter.Views
     public interface INewInsuranceCasesView : IView
     {
         event Delegates.RegistrInsuranceCases RegistrInsuranceCases;
+
+        void ShowError(string massage);
     }
 }

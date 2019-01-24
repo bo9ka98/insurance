@@ -59,13 +59,13 @@
     <Compile Include="Views\IHomeButton.cs" />
     <Compile Include="Views\newPolise\ISearchLegalClientView.cs" />
     <Compile Include="Views\newPolise\ISearchIndividClientView.cs" />
-    <Compile Include="Views\system\IStartLoginView.cs" />
+    <Compile Include="Views\work\IStartLoginView.cs" />
     <Compile Include="Views\IView.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Presenters\work\StartLoginPresenter.cs" />
     <Compile Include="Views\newPolise\IVisualizeLegalClientView.cs" />
     <Compile Include="Views\newPolise\IVisualizeNuturalClientView.cs" />
-    <Compile Include="Views\system\IWorkMenuView.cs" />
+    <Compile Include="Views\work\IWorkMenuView.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagramPresenter.cd" />

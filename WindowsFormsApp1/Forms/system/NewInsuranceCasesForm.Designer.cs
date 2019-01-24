@@ -35,6 +35,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.b_Registration = new System.Windows.Forms.Button();
             this.l_razmern = new System.Windows.Forms.Label();
+            this.l_Err = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // tB_PercentPayout
@@ -101,11 +102,23 @@
             this.l_razmern.TabIndex = 18;
             this.l_razmern.Text = "%";
             // 
+            // l_Err
+            // 
+            this.l_Err.AutoSize = true;
+            this.l_Err.ForeColor = System.Drawing.Color.Red;
+            this.l_Err.Location = new System.Drawing.Point(233, 171);
+            this.l_Err.Name = "l_Err";
+            this.l_Err.Size = new System.Drawing.Size(101, 13);
+            this.l_Err.TabIndex = 19;
+            this.l_Err.Text = "Место для ошибки";
+            this.l_Err.Visible = false;
+            // 
             // NewInsuranceCasesForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(555, 236);
+            this.Controls.Add(this.l_Err);
             this.Controls.Add(this.l_razmern);
             this.Controls.Add(this.b_Registration);
             this.Controls.Add(this.label1);
@@ -129,5 +142,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button b_Registration;
         private System.Windows.Forms.Label l_razmern;
+        private System.Windows.Forms.Label l_Err;
     }
 }

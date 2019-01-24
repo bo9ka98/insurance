@@ -21,6 +21,7 @@ namespace Presenter.Presenters
 
         public void RegistrInsuranceCases(InsuranceCases insuranceCases)
         {
+
             User user = _kernel.Get<UserControlService>().GetAuthoriaedUser();
             _kernel.Get<WorkMenuPresenter>().Run(user);
             _view.Close();

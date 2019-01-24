@@ -44,6 +44,12 @@ namespace View
 
         }
 
+        public void ShowError(string massage)
+        {
+
+            l_Err.Text = massage;
+        }
+
         public new void Show()
         {
             _context.MainForm = this;

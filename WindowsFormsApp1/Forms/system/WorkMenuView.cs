@@ -92,21 +92,17 @@ namespace View
 
         private void buttonStateIncident_Click(object sender, EventArgs e)
         {
-            EnterButtonLogOut?.Invoke();
         }
 
         private void buttonArrangePayment_Click(object sender, EventArgs e)
         {
-            EnterButtonLogOut?.Invoke();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            EnterButtonLogOut?.Invoke();
         }
         private void button5_Click(object sender, EventArgs e)
         {
-            EnterButtonLogOut?.Invoke();
         }
 
         private void button1_Click(object sender, EventArgs e)
