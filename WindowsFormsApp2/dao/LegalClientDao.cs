@@ -1,9 +1,10 @@
 ﻿
-
+using System;
+using Model.entity;
 using System.Runtime.Serialization.Formatters.Binary;
 
 
-namespace Model
+namespace Model.dao
 {
     class LegalClientDao : СommonEntitySerializableDao<LegalСlient>
     {

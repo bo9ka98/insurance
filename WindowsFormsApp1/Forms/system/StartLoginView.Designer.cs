@@ -29,21 +29,22 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.checkBoxSuperuser = new System.Windows.Forms.CheckBox();
-            this.textBoxPass = new System.Windows.Forms.TextBox();
-            this.textBaxLogin = new System.Windows.Forms.TextBox();
+            this.cB_Superuser = new System.Windows.Forms.CheckBox();
+            this.tB_Pass = new System.Windows.Forms.TextBox();
+            this.tB_Login = new System.Windows.Forms.TextBox();
             this.labelPass = new System.Windows.Forms.Label();
             this.labelLogin = new System.Windows.Forms.Label();
             this.labelHello = new System.Windows.Forms.Label();
             this.buttonEnter = new System.Windows.Forms.Button();
+            this.l_Err = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.checkBoxSuperuser);
-            this.groupBox1.Controls.Add(this.textBoxPass);
-            this.groupBox1.Controls.Add(this.textBaxLogin);
+            this.groupBox1.Controls.Add(this.cB_Superuser);
+            this.groupBox1.Controls.Add(this.tB_Pass);
+            this.groupBox1.Controls.Add(this.tB_Login);
             this.groupBox1.Controls.Add(this.labelPass);
             this.groupBox1.Controls.Add(this.labelLogin);
             this.groupBox1.Location = new System.Drawing.Point(266, 133);
@@ -53,32 +54,32 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Authorization";
             // 
-            // checkBoxSuperuser
+            // cB_Superuser
             // 
-            this.checkBoxSuperuser.AutoSize = true;
-            this.checkBoxSuperuser.Location = new System.Drawing.Point(60, 106);
-            this.checkBoxSuperuser.Name = "checkBoxSuperuser";
-            this.checkBoxSuperuser.Size = new System.Drawing.Size(90, 17);
-            this.checkBoxSuperuser.TabIndex = 4;
-            this.checkBoxSuperuser.Text = "administration";
-            this.checkBoxSuperuser.UseVisualStyleBackColor = true;
-            this.checkBoxSuperuser.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            this.cB_Superuser.AutoSize = true;
+            this.cB_Superuser.Location = new System.Drawing.Point(60, 106);
+            this.cB_Superuser.Name = "cB_Superuser";
+            this.cB_Superuser.Size = new System.Drawing.Size(90, 17);
+            this.cB_Superuser.TabIndex = 4;
+            this.cB_Superuser.Text = "administration";
+            this.cB_Superuser.UseVisualStyleBackColor = true;
+            this.cB_Superuser.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
-            // textBoxPass
+            // tB_Pass
             // 
-            this.textBoxPass.Location = new System.Drawing.Point(81, 70);
-            this.textBoxPass.Name = "textBoxPass";
-            this.textBoxPass.Size = new System.Drawing.Size(100, 20);
-            this.textBoxPass.TabIndex = 3;
-            this.textBoxPass.TextChanged += new System.EventHandler(this.TextBox2_TextChanged);
+            this.tB_Pass.Location = new System.Drawing.Point(81, 70);
+            this.tB_Pass.Name = "tB_Pass";
+            this.tB_Pass.Size = new System.Drawing.Size(115, 20);
+            this.tB_Pass.TabIndex = 3;
+            this.tB_Pass.TextChanged += new System.EventHandler(this.TextBox2_TextChanged);
             // 
-            // textBaxLogin
+            // tB_Login
             // 
-            this.textBaxLogin.Location = new System.Drawing.Point(81, 33);
-            this.textBaxLogin.Name = "textBaxLogin";
-            this.textBaxLogin.Size = new System.Drawing.Size(100, 20);
-            this.textBaxLogin.TabIndex = 2;
-            this.textBaxLogin.TextChanged += new System.EventHandler(this.TextBox1_TextChanged);
+            this.tB_Login.Location = new System.Drawing.Point(81, 33);
+            this.tB_Login.Name = "tB_Login";
+            this.tB_Login.Size = new System.Drawing.Size(115, 20);
+            this.tB_Login.TabIndex = 2;
+            this.tB_Login.TextChanged += new System.EventHandler(this.TextBox1_TextChanged);
             // 
             // labelPass
             // 
@@ -118,11 +119,23 @@
             this.buttonEnter.UseVisualStyleBackColor = true;
             this.buttonEnter.Click += new System.EventHandler(this.buttonEnter_Click);
             // 
+            // l_Err
+            // 
+            this.l_Err.AutoSize = true;
+            this.l_Err.ForeColor = System.Drawing.Color.Red;
+            this.l_Err.Location = new System.Drawing.Point(323, 273);
+            this.l_Err.Name = "l_Err";
+            this.l_Err.Size = new System.Drawing.Size(101, 13);
+            this.l_Err.TabIndex = 3;
+            this.l_Err.Text = "Место для ошибки";
+            this.l_Err.Visible = false;
+            // 
             // StartLoginView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.l_Err);
             this.Controls.Add(this.buttonEnter);
             this.Controls.Add(this.labelHello);
             this.Controls.Add(this.groupBox1);
@@ -142,8 +155,9 @@
         private System.Windows.Forms.Label labelLogin;
         private System.Windows.Forms.Label labelHello;
         private System.Windows.Forms.Button buttonEnter;
-        private System.Windows.Forms.CheckBox checkBoxSuperuser;
-        private System.Windows.Forms.TextBox textBoxPass;
-        private System.Windows.Forms.TextBox textBaxLogin;
+        private System.Windows.Forms.CheckBox cB_Superuser;
+        private System.Windows.Forms.TextBox tB_Pass;
+        private System.Windows.Forms.TextBox tB_Login;
+        private System.Windows.Forms.Label l_Err;
     }
 }

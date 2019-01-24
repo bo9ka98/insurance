@@ -1,9 +1,12 @@
 ﻿using System;
 using System.Windows.Forms;
-using System.Runtime.Serialization.Formatters.Binary;
 using Ninject;
 using Presenter;
-using Model;
+using Presenter.Presenters;
+using Presenter.Views;
+using Model.service;
+using Model.entity;
+using Model.dao;
 
 
 namespace View
@@ -21,6 +24,8 @@ namespace View
 
             kernel.Bind<IStartLoginView>().To<StartLoginView>();
             kernel.Bind<IWorkMenuView>().To<WorkMenuView>();
+
+            // registr user for issue police
             kernel.Bind<ISearchIndividClientView>().To<SearchNuturalClientFormView>();
             kernel.Bind<ISearchLegalClientView>().To<SearchLegalClientFormView>();
             kernel.Bind<ICreatIndividClienView>().To<CreatNuturalClienFormView>();
@@ -28,17 +33,26 @@ namespace View
             kernel.Bind<IVisualizeNuturalClientView>().To<VisualizeNuturalClientFormView>();
             kernel.Bind<IVisualizeLegalClientView>().To<VisualizeLegalClientFormView>();
 
+            // new police
+            kernel.Bind<INewPoliceCategoriView>().To<NewPoliceCategoriForm>();
+            kernel.Bind<INewInsuranceCasesView>().To<NewInsuranceCasesForm>();
+
             kernel.Bind<StartLoginPresenter>().ToSelf();
             kernel.Bind<WorkMenuPresenter>().ToSelf();
+
             kernel.Bind<SearchIndividClientPresenter>().ToSelf();
-            //kernel.Bind<SearchLegalClientPresenter>().ToSelf();
             kernel.Bind<CreatIndividClienPresenter>().ToSelf();
-            //kernel.Bind<CreatLegalClientPresenter>().ToSelf();
             kernel.Bind<VisualizeNuturalClientPresenter>().ToSelf();
             kernel.Bind<SelectLegalClientPresenter>().ToSelf();
 
+            //new police
+            kernel.Bind<NewPoliceCategoriPresenter>().ToSelf();
+            kernel.Bind<NewInsuranceCasesPresenter>().ToSelf();
+
+            //service
             kernel.Bind<IClientDataService<IndividClient>>().To<ClientDataService>().InSingletonScope();
             kernel.Bind<IndividClientDao>().ToSelf().InSingletonScope();
+            kernel.Bind<UserControlService>().ToSelf().InSingletonScope();
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);

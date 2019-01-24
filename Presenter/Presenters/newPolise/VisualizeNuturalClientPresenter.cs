@@ -1,11 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Ninject;
-using Model;
-using System.Collections;
+using Model.service;
+using Model.entity;
 
 namespace Presenter
 {
@@ -46,7 +42,7 @@ namespace Presenter
 
         public void Run(IndividClient nuturalClient)
         {
-            client = nuturalClient;
+            //client = nuturalClient;
             _view.SetIndividClientData(nuturalClient);
             _view.Show();
         }

@@ -51,7 +51,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
     <Compile Include="dao\LegalClientDao.cs" />
     <Compile Include="dao\СommonEntitySerializableDao.cs" />
     <Compile Include="dao\IndividClientDao.cs" />
@@ -62,9 +61,16 @@
     <Compile Include="entity\client\LegalСlient.cs" />
     <Compile Include="entity\client\Man.cs" />
     <Compile Include="entity\client\IndividClient.cs" />
+    <Compile Include="entity\policy\Alias\InsuranceCases.cs" />
+    <Compile Include="entity\policy\Alias\PoliceCategori.cs" />
+    <Compile Include="entity\user\ControlUser.cs" />
     <Compile Include="service\IClientDataService.cs" />
     <Compile Include="service\ClientDataService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="entity\user\User.cs" />
+    <Compile Include="service\InsuranceAgentService.cs" />
+    <Compile Include="service\PoliceService.cs" />
+    <Compile Include="service\UserControlService.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -75,6 +81,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="Properties\DataSources\Model.entity.PoliceCategori.datasource">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -85,8 +94,6 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="entity\policy\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

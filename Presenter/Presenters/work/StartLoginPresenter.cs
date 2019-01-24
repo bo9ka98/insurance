@@ -1,5 +1,7 @@
 ﻿using System;
 using Ninject;
+using Model.entity;
+using Model.service;
 
 namespace Presenter
 {
@@ -14,13 +16,20 @@ namespace Presenter
             _kernel = kernel;
             _view = view;
 
-            _view.EnterLogin += () => EnterLogin(_view.LoginString, _view.PassString, _view.SuperuserFlag);
+            _view.VerificationUser += VerificationUser;
         }
 
-        private void EnterLogin(string loginStr, string passStr, bool superuserFlag)
+        private void VerificationUser(ControlUser controlUser)
         {
-            // тут лежит куча логики
-            _kernel.Get<WorkMenuPresenter>().Run();
+            User user = _kernel.Get<UserControlService>().ReviewUserDataGAG(controlUser);
+            if (user != null)
+            {
+                _kernel.Get<WorkMenuPresenter>().Run(user);
+            }
+            else
+            {
+                //ошибку выведи
+            }
             _view.Close();
         }
         public void Run()

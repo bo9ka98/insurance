@@ -1,8 +1,10 @@
 ﻿using System;
 using System.IO;
 using System.Collections.Generic;
+using Model.entity;
+using Model.dao;
 
-namespace Model
+namespace Model.service
 {
     public class ClientDataService  : IClientDataService<IndividClient>
     {

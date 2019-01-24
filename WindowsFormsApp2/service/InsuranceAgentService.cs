@@ -4,11 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Model.entity
+namespace Model.service
 {
-    interface IClient
+    class InsuranceAgentService
     {
-        void SetContract();
-
     }
 }

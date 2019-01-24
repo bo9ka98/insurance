@@ -1,4 +1,5 @@
 ﻿using Ninject;
+using Model.entity;
 
 namespace Presenter
 {
@@ -13,11 +14,15 @@ namespace Presenter
             _kernel = kernel;
             _view = view;
 
+            
+            _view.EnterIssuePolice += () => EnterIssuePolice(_view.SelectionClientTipeStr);
+ 
+            _view.EnterNewPoliceCategori += () => EnterNewPoliceCategori();
+            _view.EnterNewInsuranceCases += () => EnterNewInsuranceCases();
             _view.EnterButtonLogOut += () => EnterButtonLogOut();
-            _view.EnterButtonNext += () => EnterButtonNext(_view.SelectionClientTipeStr);
         }
 
-        public void EnterButtonNext(string clientType)
+        public void EnterIssuePolice(string clientType)
         {
             if (clientType == _view.FisClientStr)
             {
@@ -30,13 +35,34 @@ namespace Presenter
             }
 
         }
+
+        public void EnterNewPoliceCategori()
+        {
+            _kernel.Get<NewPoliceCategoriPresenter>().Run();
+            _view.Close();
+        }
+
+        public void EnterNewInsuranceCases()
+        {
+            _kernel.Get<NewPoliceCategoriPresenter>().Run();
+            _view.Close();
+        }
+
         public void EnterButtonLogOut()
         {
             _kernel.Get<StartLoginPresenter>().Run();
             _view.Close();
         }
+
         public void Run()
         {
+            _kernel.Get<IStartLoginView>().ShowError(null);
+            _kernel.Get<IStartLoginView>().Show();
+        }
+
+        public void Run(User user)
+        {
+            _view.SetUserDataView(user);
             _view.Show();
         }
     }

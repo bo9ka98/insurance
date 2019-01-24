@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Model.entity;
 
 namespace Presenter
 {
@@ -14,7 +11,13 @@ namespace Presenter
         string JurClientStr { get; }
 
         string SelectionClientTipeStr { get; }
-        event Action EnterButtonNext;
+        void SetUserDataView(User user);
+
+        event Action EnterIssuePolice;
+
+        event Action EnterNewPoliceCategori;
+        event Action EnterNewInsuranceCases;
+
         event Action EnterButtonLogOut;
 
 
