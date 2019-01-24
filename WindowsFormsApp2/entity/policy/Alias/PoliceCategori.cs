@@ -9,9 +9,9 @@ namespace Model.entity
     public class PoliceCategori
     {
         public string Name { get; set; }
-        public int MaxPrice { get; set; }
+        public string MaxPrice { get; set; }
 
-        public PoliceCategori(string name, int maxPrice)
+        public PoliceCategori(string name, string maxPrice)
         {
             Name = name;
             MaxPrice = maxPrice;

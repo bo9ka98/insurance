@@ -9,9 +9,9 @@ namespace Model.entity
     public class InsuranceCases
     {
         public string Name { get; set; }
-        public int PercentPayout { get; set; }
+        public string PercentPayout { get; set; }
 
-        public InsuranceCases(string name, int percentPayout)
+        public InsuranceCases(string name, string percentPayout)
         {
             Name = name;
             PercentPayout = percentPayout;

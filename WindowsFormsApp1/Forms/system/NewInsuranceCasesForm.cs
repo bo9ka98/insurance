@@ -20,7 +20,7 @@ namespace View
 
         private void b_Registration_Click(object sender, EventArgs e)
         {
-            InsuranceCases insuranceCases = new InsuranceCases(tB_insCases.Text, int.Parse(tB_PercentPayout.Text));
+            InsuranceCases insuranceCases = new InsuranceCases(tB_insCases.Text, tB_PercentPayout.Text);
             RegistrInsuranceCases?.Invoke(insuranceCases);
         }
 

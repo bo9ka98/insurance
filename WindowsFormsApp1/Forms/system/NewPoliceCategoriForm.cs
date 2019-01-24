@@ -20,7 +20,7 @@ namespace View
         
         private void b_Registration_Click(object sender, EventArgs e)
         {
-            PoliceCategori policeCategori = new PoliceCategori(tB_policyName.Text, int.Parse(tB_policyCost.Text));
+            PoliceCategori policeCategori = new PoliceCategori(tB_policyName.Text, tB_policyCost.Text);
             RegistrPoliceCategori?.Invoke(policeCategori);
         }
 
