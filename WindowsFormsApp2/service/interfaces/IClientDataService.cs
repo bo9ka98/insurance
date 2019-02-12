@@ -4,7 +4,7 @@ using Model.entity;
 
 namespace Model.service
 {
-    public interface IClientDataService <T>
+    internal interface IClientDataService <T>
     {
         //private List<T> listObject;
         List<IndividClient> ReadListIndividClientDao(IndividClient individClient);
